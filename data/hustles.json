@@ -1,0 +1,242 @@
+[
+  {
+    "name": "AI-Enhanced Freelance Writing",
+    "tagline": "Use AI to write 3x faster, charge the same rates",
+    "difficulty": 1,
+    "timeToFirstDollar": "1-2 weeks",
+    "startupCost": "$20/month",
+    "incomeRange": "$2,000-10,000/month",
+    "tools": [
+      { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
+      { "name": "Grammarly", "url": "https://grammarly.com", "price": "$12/mo" },
+      { "name": "Surfer SEO", "url": "https://surferseo.com", "price": "$89/mo (optional)" }
+    ],
+    "steps": [
+      "Pick a niche you know (tech, health, finance, SaaS)",
+      "Use AI for research and first drafts, add your expertise and voice",
+      "Create 3 portfolio samples using AI-assisted workflow",
+      "Pitch on Upwork/Fiverr — start at $0.10-0.15/word, raise after 5 reviews",
+      "Scale to $0.25-0.50/word with SEO or email specialization"
+    ],
+    "risk": "Race to bottom on generic content. Must add real expertise. AI-only content gets flagged by clients.",
+    "caseStudy": {
+      "who": "Freelancers using AI tools",
+      "result": "40% higher hourly rate vs non-AI writers",
+      "detail": "Cliptics.com 2026 survey: freelancers combining AI with domain expertise earn significantly more per hour than those who don't use AI.",
+      "source": "https://cliptics.com/blog/ai-side-hustles-make-money-2026"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=uz_3dSU8rQo",
+    "videoAuthor": "Dan Martell",
+    "videoViews": "1.4M"
+  },
+  {
+    "name": "AI Image Generation Services",
+    "tagline": "Create custom visuals for businesses using Midjourney/DALL-E",
+    "difficulty": 1,
+    "timeToFirstDollar": "1-2 weeks",
+    "startupCost": "$10-30/month",
+    "incomeRange": "$1,000-8,000/month",
+    "tools": [
+      { "name": "Midjourney", "url": "https://midjourney.com", "price": "$10-30/mo" },
+      { "name": "Canva Pro", "url": "https://canva.com", "price": "$15/mo" },
+      { "name": "Adobe Firefly", "url": "https://firefly.adobe.com", "price": "$5/mo" }
+    ],
+    "steps": [
+      "Master prompt crafting for one style (product photos, logos, illustrations)",
+      "Build a portfolio of 20-30 best outputs on Behance or your own site",
+      "List services on Fiverr/Etsy — product mockups, book covers, social media packs",
+      "Charge $50-200 per project, deliver in 24-48 hours",
+      "Upsell to monthly retainers for social media content packs"
+    ],
+    "risk": "Market getting crowded. Must develop a unique style. Some platforms restrict AI art for commercial use.",
+    "caseStudy": {
+      "who": "Print-on-demand sellers using Midjourney",
+      "result": "$1,000-5,000/month passive income",
+      "detail": "Printify reports sellers using AI-generated designs on t-shirts and mugs earning consistent passive income with zero inventory.",
+      "source": "https://printify.com/blog/how-to-use-ai-to-make-money/"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=lg95nHH65KI",
+    "videoAuthor": "Julian Adams",
+    "videoViews": "95K"
+  },
+  {
+    "name": "AI Content Repurposing",
+    "tagline": "Turn one podcast/video into 10+ pieces of content",
+    "difficulty": 1,
+    "timeToFirstDollar": "1-2 weeks",
+    "startupCost": "$24-55/month",
+    "incomeRange": "$1,500-6,000/month",
+    "tools": [
+      { "name": "Descript", "url": "https://descript.com", "price": "$24/mo" },
+      { "name": "Opus Clip", "url": "https://opus.pro", "price": "Free / $15/mo" },
+      { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" }
+    ],
+    "steps": [
+      "Learn Descript or Opus Clip — takes 1-2 days to get proficient",
+      "Offer free trial to 2-3 podcasters or YouTubers in your network",
+      "Deliver: 5 short clips + 10 social posts + 1 newsletter draft per episode",
+      "Charge $500-1,500/month per client on retainer",
+      "Scale to 3-5 clients for full-time income"
+    ],
+    "risk": "Clients may churn if they learn the tools themselves. Must deliver speed + quality, not just AI output.",
+    "caseStudy": {
+      "who": "Content repurposing freelancers",
+      "result": "3x efficiency with Descript alone",
+      "detail": "Marksinsights.com reports content repurposing as one of the fastest-growing AI services, with Descript giving 3x productivity gains.",
+      "source": "https://marksinsights.com/ai-side-hustles-that-actually-work/"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=K8Ros5RhJW4",
+    "videoAuthor": "Dan Martell",
+    "videoViews": "533K"
+  },
+  {
+    "name": "AI Chatbot Building",
+    "tagline": "Build custom chatbots for local businesses, no coding needed",
+    "difficulty": 2,
+    "timeToFirstDollar": "2-4 weeks",
+    "startupCost": "$0-50/month",
+    "incomeRange": "$3,000-15,000/month",
+    "tools": [
+      { "name": "Voiceflow", "url": "https://voiceflow.com", "price": "Free tier" },
+      { "name": "Botpress", "url": "https://botpress.com", "price": "Free tier" },
+      { "name": "Make.com", "url": "https://make.com", "price": "$9-16/mo" }
+    ],
+    "steps": [
+      "Learn one no-code chatbot builder (Voiceflow or Botpress) — 1 weekend",
+      "Build 2-3 demo bots for common industries (restaurant, salon, real estate)",
+      "Pitch local businesses via Google Maps outreach or Upwork",
+      "Charge $500-1,500 setup + $100-300/month maintenance",
+      "Scale by templating solutions for specific industries"
+    ],
+    "risk": "Client acquisition is slow initially. Must maintain bots when AI models update. Some clients expect 24/7 support.",
+    "caseStudy": {
+      "who": "Anonymous woman (no-code background)",
+      "result": "$1,000+/month within months",
+      "detail": "Side Hustle School profiled someone who built simple bots for executives — LinkedIn drafting, meeting summaries. Each bot takes a weekend.",
+      "source": "https://sidehustleschool.com/guides/ai-side-hustles/"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=EH5jx5qPabU",
+    "videoAuthor": "Futurepedia",
+    "videoViews": "3.7M"
+  },
+  {
+    "name": "AI Automation Workflows",
+    "tagline": "Connect AI to business tools — automate reports, emails, data entry",
+    "difficulty": 3,
+    "timeToFirstDollar": "3-6 weeks",
+    "startupCost": "$20-50/month",
+    "incomeRange": "$3,000-12,000/month",
+    "tools": [
+      { "name": "Make.com", "url": "https://make.com", "price": "$9-16/mo" },
+      { "name": "Zapier", "url": "https://zapier.com", "price": "Free / $20/mo" },
+      { "name": "OpenAI API", "url": "https://platform.openai.com", "price": "~$5-20/mo" }
+    ],
+    "steps": [
+      "Learn Make.com or Zapier basics — free tutorials take 1 week",
+      "Build 3 demo automations (email summarizer, lead scorer, report generator)",
+      "Find clients on Upwork searching 'automation' or 'workflow'",
+      "Charge $500-3,000 per workflow build + monthly retainer",
+      "Document and templatize your builds for faster delivery"
+    ],
+    "risk": "Requires understanding API logic. Workflows break when tools update. Clients may not understand the value until they see it.",
+    "caseStudy": {
+      "who": "AI automation freelancers",
+      "result": "$100-250/hour billing rate",
+      "detail": "Upwork 2026 report shows AI integration/automation demand grew +178% YoY. SideQuestHustle confirms it's one of the highest-paying AI skill clusters.",
+      "source": "https://sidequesthustle.com/guides/best-ai-side-hustles-2026"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=A0xA5vyDgzA",
+    "videoAuthor": "AI Founders",
+    "videoViews": "5.4M"
+  },
+  {
+    "name": "AI-Powered Dropshipping",
+    "tagline": "Use AI for product research, listings, and ads — sell without inventory",
+    "difficulty": 3,
+    "timeToFirstDollar": "2-4 weeks",
+    "startupCost": "$50-100/month",
+    "incomeRange": "$1,000-10,000/month",
+    "tools": [
+      { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
+      { "name": "Shopify", "url": "https://shopify.com", "price": "$39/mo" },
+      { "name": "Canva Pro", "url": "https://canva.com", "price": "$15/mo" }
+    ],
+    "steps": [
+      "Use AI to research trending products with low competition",
+      "Set up Shopify store — AI writes product descriptions and ad copy",
+      "Source from reliable suppliers (AliExpress, CJ Dropshipping)",
+      "Run Facebook/TikTok ads — use AI to generate and test ad variations",
+      "Analyze data, kill losers fast, scale winners"
+    ],
+    "risk": "Highly competitive. Ad spend can eat profits. Shipping times frustrate customers. Must differentiate beyond just AI-written copy.",
+    "caseStudy": {
+      "who": "Mark Tilbury (YouTuber, 7-day experiment)",
+      "result": "Documented real revenue in 7 days",
+      "detail": "16.8M-view video showing the complete process of AI dropshipping from product research to first sales, with transparent results.",
+      "source": "https://www.youtube.com/watch?v=xfOT2elC2Ok"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=xfOT2elC2Ok",
+    "videoAuthor": "Mark Tilbury",
+    "videoViews": "16.8M"
+  },
+  {
+    "name": "Faceless YouTube Channel",
+    "tagline": "AI scripts, voiceover, and edits — earn ad revenue without showing your face",
+    "difficulty": 2,
+    "timeToFirstDollar": "3-6 months",
+    "startupCost": "$20-50/month",
+    "incomeRange": "$500-5,000/month (after monetization)",
+    "tools": [
+      { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
+      { "name": "ElevenLabs", "url": "https://elevenlabs.io", "price": "$5-22/mo" },
+      { "name": "CapCut", "url": "https://capcut.com", "price": "Free" }
+    ],
+    "steps": [
+      "Pick a niche with proven demand (finance, tech, history, motivation)",
+      "Use ChatGPT for scripts, ElevenLabs for voiceover",
+      "Edit with CapCut using stock footage — 1 video per week minimum",
+      "Optimize titles/thumbnails with AI — consistency beats quality early on",
+      "Monetize at 1,000 subs + 4,000 watch hours (typically 3-6 months)"
+    ],
+    "risk": "Takes months before any income. Algorithm changes can tank views. Saturated niches are very hard to break into.",
+    "caseStudy": {
+      "who": "Faceless channel creators",
+      "result": "Fiverr searches for 'faceless YouTube creator' +488%",
+      "detail": "Fiverr Business Trends Index 2025 shows massive demand growth. Channels in finance/motivation niches report $2,000-5,000/month after 6-12 months.",
+      "source": "https://www.youtube.com/watch?v=pXPu3hAR2zE"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=pXPu3hAR2zE",
+    "videoAuthor": "Youri van Hofwegen",
+    "videoViews": "373K"
+  },
+  {
+    "name": "AI Website Builder (Ad Revenue)",
+    "tagline": "Build simple utility websites with AI, earn from Google Ads traffic",
+    "difficulty": 2,
+    "timeToFirstDollar": "4-8 weeks",
+    "startupCost": "$10-30/month",
+    "incomeRange": "$500-19,000/month",
+    "tools": [
+      { "name": "Cursor / Bolt.new", "url": "https://cursor.com", "price": "$20/mo" },
+      { "name": "Vercel", "url": "https://vercel.com", "price": "Free tier" },
+      { "name": "Google AdSense", "url": "https://adsense.google.com", "price": "Free" }
+    ],
+    "steps": [
+      "Find a simple utility people search for (converter, calculator, generator)",
+      "Use AI coding tools to build it in 1-2 days",
+      "Deploy for free on Vercel or Netlify",
+      "Apply for Google AdSense once you have content",
+      "Focus on SEO — target long-tail keywords with low competition"
+    ],
+    "risk": "SEO takes months. Google algorithm updates can kill traffic overnight. Must build multiple sites to diversify.",
+    "caseStudy": {
+      "who": "compressjpeg.com (single utility site)",
+      "result": "$19,000/month from 1.9M monthly visitors",
+      "detail": "A simple one-page image compression tool earning $19K/month purely from Google Ads. Built with basic web tech, no complex backend.",
+      "source": "https://www.youtube.com/watch?v=5qiXoWe6Z2o"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=5qiXoWe6Z2o",
+    "videoAuthor": "Mikey Website",
+    "videoViews": "155K"
+  }
+]

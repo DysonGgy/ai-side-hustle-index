@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Side Hustle Index - The simplest AI side hustle list for beginners. Curated, honest, and updated daily.">
-    <meta name="keywords" content="AI side hustle, side income, freelance, beginner side hustle, make money online">
+    <meta name="description" content="AI Side Hustle Index - Find your AI side hustle: tools, costs, steps, and realistic income. No hype, just actionable guides.">
+    <meta name="keywords" content="AI side hustle, make money with AI, AI tools, freelance AI, passive income AI">
     <meta name="robots" content="index, follow">
-    <title>AI Side Hustle Index — The Simplest AI Side Hustle List for Beginners</title>
+    <title>AI Side Hustle Index — Know What to Do, How to Do It, What It Costs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6859622430337032"
          crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-inner">
             <a href="#top" class="nav-logo">
@@ -27,10 +25,10 @@
                 <span>AI Side Hustle Index</span>
             </a>
             <div class="nav-links">
-                <a href="#rankings">Rankings</a>
-                <a href="#categories">Library</a>
-                <a href="#creators">Creators</a>
-                <a href="#success">Success</a>
+                <a href="#hustles">Hustles</a>
+                <a href="#tools">Tools</a>
+                <a href="#stories">Stories</a>
+                <a href="#videos">Videos</a>
             </div>
             <div class="nav-search">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -42,107 +40,104 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero" id="top">
         <div class="hero-content">
-            <h1 class="hero-title fade-in">Discover AI-Powered<br>Side Hustles</h1>
-            <p class="hero-subtitle fade-in">The simplest, most honest index of AI side hustles for beginners.<br>No hype. No courses. Just real opportunities.</p>
+            <h1 class="hero-title fade-in">AI Side Hustles<br>That Actually Work</h1>
+            <p class="hero-subtitle fade-in">What to do. What tools to use. What it costs. What you can earn.<br>No hype. No $10K/month promises. Just honest, actionable paths.</p>
             <div class="hero-ticker">
                 <div class="ticker-track" id="newsTicker"></div>
             </div>
         </div>
     </section>
 
-    <!-- Ad: Top -->
     <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <!-- Rankings -->
-    <section class="section" id="rankings">
+    <section class="section" id="hustles">
         <div class="section-container">
             <div class="section-header fade-in">
-                <h2 class="section-eyebrow">Updated Daily</h2>
-                <h3 class="section-title">Today's Top 8</h3>
-                <p class="section-desc">Based on Upwork In-Demand Skills 2026, Fiverr Business Trends Index 2025, and verified income data.</p>
+                <h2 class="section-eyebrow">Actionable Guides</h2>
+                <h3 class="section-title">Pick Your AI Side Hustle</h3>
+                <p class="section-desc">Each card tells you exactly what to do, what tools you need, what it costs, and what you can realistically earn.</p>
             </div>
-            <div class="rankings-grid" id="rankingsTable"></div>
+            <div class="sort-buttons" role="group" aria-label="Sort hustles">
+                <button class="sort-btn active" data-sort="time">Fastest First</button>
+                <button class="sort-btn" data-sort="income">Highest Income</button>
+                <button class="sort-btn" data-sort="cost">Lowest Cost</button>
+                <button class="sort-btn" data-sort="difficulty">Easiest First</button>
+            </div>
+            <div class="hustles-grid" id="hustlesGrid"></div>
         </div>
     </section>
 
-    <!-- Ad: Mid -->
     <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <!-- Categories -->
-    <section class="section section-gray" id="categories">
+    <section class="section section-gray" id="tools">
         <div class="section-container">
             <div class="section-header fade-in">
-                <h2 class="section-eyebrow">Explore</h2>
-                <h3 class="section-title">Side Hustle Library</h3>
-                <p class="section-desc">Browse by category. Find what fits your skills and schedule.</p>
+                <h2 class="section-eyebrow">Tool Directory</h2>
+                <h3 class="section-title">AI Tools You'll Actually Use</h3>
+                <p class="section-desc">The specific tools people use to earn money, with real pricing. No affiliate tricks.</p>
             </div>
             <div class="tabs" role="tablist">
-                <button class="tab active" data-category="light" role="tab">Light Daily</button>
-                <button class="tab" data-category="service" role="tab">Online Service</button>
-                <button class="tab" data-category="content" role="tab">Content Creation</button>
-                <button class="tab" data-category="crossborder" role="tab">Cross-border</button>
+                <button class="tab active" data-tool-cat="writing" role="tab">Writing</button>
+                <button class="tab" data-tool-cat="design" role="tab">Design</button>
+                <button class="tab" data-tool-cat="video" role="tab">Video</button>
+                <button class="tab" data-tool-cat="automation" role="tab">Automation</button>
+                <button class="tab" data-tool-cat="research" role="tab">Research</button>
             </div>
-            <div class="cards-grid" id="categoryCards"></div>
+            <div class="tools-grid" id="toolsGrid"></div>
         </div>
     </section>
 
-    <!-- Ad: Mid 2 -->
     <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <!-- Creators -->
-    <section class="section" id="creators">
+    <section class="section" id="stories">
         <div class="section-container">
             <div class="section-header fade-in">
-                <h2 class="section-eyebrow">Real Stories</h2>
-                <h3 class="section-title">Featured Creators</h3>
-                <p class="section-desc">Real people sharing real experiences. Watch on their original platforms.</p>
-            </div>
-            <div class="creators-grid" id="creatorGrid"></div>
-        </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section class="section section-gray" id="success">
-        <div class="section-container">
-            <div class="section-header fade-in">
-                <h2 class="section-eyebrow">Inspiration</h2>
+                <h2 class="section-eyebrow">Real People</h2>
                 <h3 class="section-title">AI Success Stories</h3>
-                <p class="section-desc">Real individuals using AI to build businesses alone — verified stories from public sources.</p>
+                <p class="section-desc">Verified stories of ordinary people building real income with AI tools.</p>
             </div>
             <div class="success-grid" id="successGrid"></div>
         </div>
     </section>
 
-    <!-- Ad: Bottom -->
+    <section class="section section-gray" id="videos">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-eyebrow">Watch & Learn</h2>
+                <h3 class="section-title">Top Video Guides</h3>
+                <p class="section-desc">Highest-viewed tutorials on AI side hustles. Sorted by views.</p>
+            </div>
+            <div class="creators-grid" id="creatorGrid"></div>
+        </div>
+    </section>
+
     <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h4>Disclaimer</h4>
-                    <p>This website is an index of publicly available internet content. It does not constitute investment advice. All side hustles carry inherent risks. Please do your own research before starting any venture.</p>
+                    <p>This website is an index of publicly available information. Income figures are ranges based on published reports and may vary. All side hustles carry risk. Do your own research.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sources</h4>
+                    <p>Data sourced from Upwork In-Demand Skills 2026, Fiverr Business Trends Index 2025, SideQuestHustle, Side Hustle School, and verified public case studies.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Copyright</h4>
-                    <p>All videos and external content are the property of their original creators. This site does not store, host, re-upload, or re-edit any third-party content.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>DMCA Notice</h4>
-                    <p>If you are the original creator and wish to have your content link removed, please contact us. We will remove it within 24 hours, no questions asked.</p>
+                    <p>All videos and external content are property of their original creators. This site links to but does not host third-party content.</p>
                     <p class="footer-contact">dmca@aisidehustleindex.com</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Privacy Policy</h4>
-                    <p>This site uses Google AdSense for advertising. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+                    <h4>Privacy</h4>
+                    <p>This site uses Google AdSense. You may opt out of personalized ads at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AI Side Hustle Index. All rights reserved.</p>
+                <p>&copy; 2025 AI Side Hustle Index. All rights reserved.</p>
                 <p>Last updated: <span id="lastUpdated"></span></p>
             </div>
         </div>

@@ -1,0 +1,37 @@
+{
+  "writing": [
+    { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo", "useCase": "Writing, research, brainstorming, client comms" },
+    { "name": "Claude Pro", "url": "https://claude.ai", "price": "$20/mo", "useCase": "Long documents, nuanced editing, analysis" },
+    { "name": "Grammarly", "url": "https://grammarly.com", "price": "$12/mo", "useCase": "Grammar, tone, clarity checking" },
+    { "name": "Copy.ai", "url": "https://copy.ai", "price": "Free / $36/mo", "useCase": "Marketing copy, ad variations, email sequences" },
+    { "name": "Jasper", "url": "https://jasper.ai", "price": "$39/mo", "useCase": "Brand voice content, blog posts at scale" }
+  ],
+  "design": [
+    { "name": "Midjourney", "url": "https://midjourney.com", "price": "$10-30/mo", "useCase": "High-quality image generation, art, concepts" },
+    { "name": "Canva Pro", "url": "https://canva.com", "price": "$15/mo", "useCase": "Social graphics, presentations, brand kits" },
+    { "name": "Adobe Firefly", "url": "https://firefly.adobe.com", "price": "$5/mo", "useCase": "Commercial-safe image generation" },
+    { "name": "Remove.bg", "url": "https://remove.bg", "price": "Free / pay-per-use", "useCase": "Background removal for product images" },
+    { "name": "Gamma", "url": "https://gamma.app", "price": "Free / $10/mo", "useCase": "AI-generated presentations and decks" }
+  ],
+  "video": [
+    { "name": "Descript", "url": "https://descript.com", "price": "$24/mo", "useCase": "Video/audio editing, transcription, screen recording" },
+    { "name": "Opus Clip", "url": "https://opus.pro", "price": "Free / $15/mo", "useCase": "Auto-clip short videos from long content" },
+    { "name": "ElevenLabs", "url": "https://elevenlabs.io", "price": "$5-22/mo", "useCase": "AI voiceover, text-to-speech, voice cloning" },
+    { "name": "CapCut", "url": "https://capcut.com", "price": "Free", "useCase": "Video editing with AI effects and captions" },
+    { "name": "Runway", "url": "https://runwayml.com", "price": "$12-28/mo", "useCase": "AI video generation, green screen, effects" }
+  ],
+  "automation": [
+    { "name": "Make.com", "url": "https://make.com", "price": "$9-16/mo", "useCase": "Visual workflow automation, API connections" },
+    { "name": "Zapier", "url": "https://zapier.com", "price": "Free / $20/mo", "useCase": "App-to-app automation, simple triggers" },
+    { "name": "n8n", "url": "https://n8n.io", "price": "Free (self-host) / $20/mo", "useCase": "Open-source automation, full control" },
+    { "name": "Voiceflow", "url": "https://voiceflow.com", "price": "Free tier", "useCase": "No-code chatbot builder" },
+    { "name": "Botpress", "url": "https://botpress.com", "price": "Free tier", "useCase": "AI chatbot platform with GPT integration" }
+  ],
+  "research": [
+    { "name": "Perplexity AI", "url": "https://perplexity.ai", "price": "Free / $20/mo", "useCase": "AI-powered research with source citations" },
+    { "name": "Frase", "url": "https://frase.io", "price": "$15/mo", "useCase": "SEO content briefs, competitor analysis" },
+    { "name": "Surfer SEO", "url": "https://surferseo.com", "price": "$89/mo", "useCase": "On-page SEO optimization, content scoring" },
+    { "name": "Otter.ai", "url": "https://otter.ai", "price": "Free / $10/mo", "useCase": "Meeting transcription and summaries" },
+    { "name": "Notion AI", "url": "https://notion.so", "price": "Free / $10/mo", "useCase": "Knowledge base, project docs, AI writing assist" }
+  ]
+}

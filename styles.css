@@ -223,83 +223,256 @@ body {
     margin: 0 auto;
 }
 
-/* Rankings */
-.rankings-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-    gap: 16px;
-}
-
-.rank-card {
+/* Sort Buttons */
+.sort-buttons {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 24px;
-    background: var(--white);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0,0,0,0.04);
-    transition: all var(--transition);
-    cursor: default;
-}
-
-.rank-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
-.rank-num {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: 700;
-    flex-shrink: 0;
+    gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-.rank-num.top3 {
+.sort-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    background: rgba(0,0,0,0.05);
+    color: var(--gray-700);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.sort-btn:hover {
+    background: rgba(0,0,0,0.08);
+}
+
+.sort-btn.active {
     background: var(--black);
     color: var(--white);
 }
 
-.rank-num.normal {
-    background: var(--gray-100);
-    color: var(--gray-700);
+/* Hustle Detail Cards */
+.hustles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 24px;
 }
 
-.rank-body {
-    flex: 1;
-    min-width: 0;
+.hustle-detail-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.rank-name {
-    font-size: 16px;
-    font-weight: 600;
+.hustle-detail-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.hustle-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     margin-bottom: 4px;
-    letter-spacing: -0.01em;
 }
 
-.rank-meta {
+.hustle-tagline {
+    font-size: 15px;
+    color: var(--gray-500);
+}
+
+.hustle-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.metric-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.metric-icon {
     font-size: 14px;
+}
+
+.metric-time { background: rgba(0,113,227,0.08); color: var(--blue); }
+.metric-cost { background: rgba(255,149,0,0.08); color: #b36b00; }
+.metric-income { background: rgba(52,199,89,0.08); color: #1a8a3e; }
+.metric-diff { background: var(--gray-100); color: var(--gray-700); }
+
+.hustle-tools h4,
+.hustle-steps h4 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--gray-400);
+    margin-bottom: 10px;
+}
+
+.tool-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tool-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--gray-100);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.tool-chip:hover {
+    background: rgba(0,113,227,0.08);
+    color: var(--blue);
+}
+
+.tool-price {
+    color: var(--gray-400);
+    font-weight: 400;
+}
+
+.hustle-steps ol {
+    padding-left: 20px;
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+.hustle-steps li {
+    margin-bottom: 4px;
+}
+
+.hustle-risk {
+    font-size: 13px;
+    color: var(--red);
+    background: rgba(255,59,48,0.05);
+    border-radius: 8px;
+    padding: 12px 16px;
+    line-height: 1.5;
+}
+
+.hustle-case {
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+}
+
+.case-result {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 6px;
+}
+
+.case-detail {
+    font-size: 13px;
+    color: var(--gray-500);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.case-source {
+    font-size: 12px;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.case-source:hover {
+    text-decoration: underline;
+}
+
+.hustle-video {
+    margin-top: auto;
+}
+
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.video-link:hover {
+    background: var(--gray-900);
+    transform: scale(1.02);
+}
+
+.video-play {
+    font-size: 11px;
+}
+
+/* Tool Directory Cards */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.tool-card {
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.04);
+    text-decoration: none;
+    color: var(--black);
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--blue);
+}
+
+.tool-card-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.tool-card-price {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.tool-card-use {
+    font-size: 12px;
     color: var(--gray-500);
     line-height: 1.4;
-}
-
-.rank-source {
-    font-size: 11px;
-    color: var(--blue);
-    margin-top: 4px;
-    line-height: 1.3;
-    opacity: 0.8;
-}
-
-.rank-stars {
-    font-size: 14px;
-    color: var(--orange);
-    flex-shrink: 0;
 }
 
 /* Tabs */
@@ -333,83 +506,6 @@ body {
     color: var(--white);
 }
 
-/* Category Cards */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-}
-
-.hustle-card {
-    background: var(--white);
-    border-radius: var(--radius-md);
-    padding: 32px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0,0,0,0.04);
-    transition: all var(--transition);
-    display: flex;
-    flex-direction: column;
-}
-
-.hustle-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-}
-
-.hustle-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-bottom: 10px;
-}
-
-.hustle-card .card-desc {
-    font-size: 15px;
-    color: var(--gray-500);
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.hustle-card .card-workflow {
-    background: var(--gray-100);
-    border-radius: var(--radius-sm);
-    padding: 16px;
-    font-size: 14px;
-    color: var(--gray-700);
-    line-height: 1.6;
-    margin-bottom: 12px;
-}
-
-.hustle-card .card-risk {
-    font-size: 13px;
-    color: var(--red);
-    background: rgba(255,59,48,0.06);
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.hustle-card .card-link {
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 12px 20px;
-    background: var(--blue);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 100px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all var(--transition);
-    align-self: flex-start;
-}
-
-.hustle-card .card-link:hover {
-    background: var(--blue-hover);
-    transform: scale(1.02);
-}
 
 /* Creator Cards */
 .creators-grid {
@@ -707,12 +803,12 @@ body {
         padding: 64px 20px;
     }
 
-    .rankings-grid {
+    .hustles-grid {
         grid-template-columns: 1fr;
     }
 
-    .cards-grid {
-        grid-template-columns: 1fr;
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 
     .creators-grid {
@@ -747,12 +843,7 @@ body {
         font-size: 32px;
     }
 
-    .rank-card {
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .hustle-card {
+    .hustle-detail-card {
         padding: 24px;
     }
 }

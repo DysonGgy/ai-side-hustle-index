@@ -68,7 +68,7 @@ function renderCreators(creators) {
             </div>
             <div class="creator-body">
                 <h3>${c.title}</h3>
-                <p class="creator-meta">${c.author} · ${c.platform}</p>
+                <p class="creator-meta">${c.author} · ${c.platform}${c.views ? ` · ${c.views} views` : ''}</p>
                 <p class="creator-summary">${c.summary}</p>
                 <a href="${c.url}" target="_blank" rel="noopener noreferrer" class="creator-btn">
                     Watch Original →

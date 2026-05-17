@@ -176,6 +176,25 @@
         </div>
     </section>
 
+    <section class="section" id="messages">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-eyebrow">Community</h2>
+                <h3 class="section-title">Leave a Message</h3>
+                <p class="section-desc">Share your thoughts, questions, or progress. Messages are saved daily.</p>
+            </div>
+            <div class="message-box fade-in">
+                <form id="messageForm" class="message-form">
+                    <input type="text" id="msgName" placeholder="Your name" required maxlength="50">
+                    <textarea id="msgContent" placeholder="Write your message..." required maxlength="500" rows="3"></textarea>
+                    <button type="submit" class="msg-submit" id="msgSubmit">Submit</button>
+                </form>
+                <div id="msgStatus"></div>
+                <div id="msgList" class="message-list"></div>
+            </div>
+        </div>
+    </section>
+
     <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
     <footer class="footer">
@@ -200,7 +219,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AI Side Hustle Index. All rights reserved.</p>
+                <p>&copy; 2025 AI Side Hustle Index (aisidehustleindex.com). All rights reserved.</p>
                 <p>Last updated: <span id="lastUpdated"></span></p>
             </div>
         </div>

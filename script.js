@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         setupSortButtons(hustles);
         setupToolTabs(tools);
         setupSearch();
+        setupMessages();
         setupScrollAnimations();
         setLastUpdated();
     } catch (e) {
@@ -294,4 +295,94 @@ function setupScrollAnimations() {
 function setLastUpdated() {
     const el = document.getElementById('lastUpdated');
     if (el) el.textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+// --- Messages / Guestbook ---
+const MSG_REPO = 'DysonGgy/ai-side-hustle-index';
+const MSG_TOKEN = 'MSG_TOKEN_PLACEHOLDER';
+
+function getToday() {
+    const d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+
+function getTimeStr() {
+    const d = new Date();
+    return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+}
+
+async function loadMessages() {
+    const list = document.getElementById('msgList');
+    if (!list) return;
+    const today = getToday();
+    const url = `https://api.github.com/repos/${MSG_REPO}/contents/messages/${today}.md`;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) { list.innerHTML = '<p class="msg-empty">No messages yet today. Be the first!</p>'; return; }
+        const data = await res.json();
+        const content = atob(data.content.replace(/\n/g, ''));
+        const decoded = new TextDecoder().decode(Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0)));
+        list.innerHTML = '<div class="msg-entries">' + decoded.split('---').filter(s => s.trim()).map(s => `<div class="msg-entry">${s.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>')}</div>`).join('') + '</div>';
+    } catch (e) {
+        list.innerHTML = '<p class="msg-empty">No messages yet today. Be the first!</p>';
+    }
+}
+
+async function submitMessage(name, content) {
+    const today = getToday();
+    const time = getTimeStr();
+    const newEntry = `**${name}** · ${time}\n\n${content}\n\n---\n\n`;
+    const filePath = `messages/${today}.md`;
+    const url = `https://api.github.com/repos/${MSG_REPO}/contents/${filePath}`;
+    const headers = { 'Authorization': `token ${MSG_TOKEN}`, 'Content-Type': 'application/json' };
+
+    let existingContent = '';
+    let sha = null;
+    try {
+        const getRes = await fetch(url, { headers });
+        if (getRes.ok) {
+            const data = await getRes.json();
+            sha = data.sha;
+            existingContent = new TextDecoder().decode(Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0)));
+        }
+    } catch (e) {}
+
+    const fullContent = existingContent + newEntry;
+    const encoded = btoa(unescape(encodeURIComponent(fullContent)));
+    const body = { message: `Message from ${name} on ${today}`, content: encoded };
+    if (sha) body.sha = sha;
+
+    const putRes = await fetch(url, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (!putRes.ok) throw new Error('Failed to save: ' + putRes.status);
+}
+
+function setupMessages() {
+    const form = document.getElementById('messageForm');
+    if (!form) return;
+    if (MSG_TOKEN === 'MSG_TOKEN_PLACEHOLDER') {
+        document.getElementById('msgStatus').innerHTML = '<p class="msg-warning">Messages are view-only until the site owner configures the token.</p>';
+        form.querySelector('.msg-submit').disabled = true;
+    }
+    loadMessages();
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('msgName').value.trim();
+        const content = document.getElementById('msgContent').value.trim();
+        if (!name || !content) return;
+        const btn = document.getElementById('msgSubmit');
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+        try {
+            await submitMessage(name, content);
+            document.getElementById('msgName').value = '';
+            document.getElementById('msgContent').value = '';
+            document.getElementById('msgStatus').innerHTML = '<p class="msg-success">Message saved!</p>';
+            setTimeout(() => { document.getElementById('msgStatus').innerHTML = ''; }, 3000);
+            loadMessages();
+        } catch (err) {
+            document.getElementById('msgStatus').innerHTML = '<p class="msg-error">Failed to save: ' + err.message + '</p>';
+        }
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+    });
 }

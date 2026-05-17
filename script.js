@@ -1,22 +1,27 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const [hustles, tools, creators, news, stories] = await Promise.all([
-        fetch('data/hustles.json').then(r => r.json()),
-        fetch('data/tools.json').then(r => r.json()),
-        fetch('data/creators.json').then(r => r.json()),
-        fetch('data/news.json').then(r => r.json()),
-        fetch('data/success-stories.json').then(r => r.json())
-    ]);
+    try {
+        const [hustles, tools, creators, news, stories] = await Promise.all([
+            fetch('data/hustles.json').then(r => { if (!r.ok) throw new Error('hustles.json ' + r.status); return r.json(); }),
+            fetch('data/tools.json').then(r => { if (!r.ok) throw new Error('tools.json ' + r.status); return r.json(); }),
+            fetch('data/creators.json').then(r => { if (!r.ok) throw new Error('creators.json ' + r.status); return r.json(); }),
+            fetch('data/news.json').then(r => { if (!r.ok) throw new Error('news.json ' + r.status); return r.json(); }),
+            fetch('data/success-stories.json').then(r => { if (!r.ok) throw new Error('success-stories.json ' + r.status); return r.json(); })
+        ]);
 
-    renderTicker(news);
-    renderHustles(hustles, 'time');
-    renderTools(tools, 'writing');
-    renderCreators(creators);
-    renderSuccessStories(stories);
-    setupSortButtons(hustles);
-    setupToolTabs(tools);
-    setupSearch();
-    setupScrollAnimations();
-    setLastUpdated();
+        renderTicker(news);
+        renderHustles(hustles, 'time');
+        renderTools(tools, 'writing');
+        renderCreators(creators);
+        renderSuccessStories(stories);
+        setupSortButtons(hustles);
+        setupToolTabs(tools);
+        setupSearch();
+        setupScrollAnimations();
+        setLastUpdated();
+    } catch (e) {
+        console.error('Failed to load data:', e);
+        document.body.innerHTML += '<div style="text-align:center;padding:40px;color:#ff3b30;">Data loading error: ' + e.message + '</div>';
+    }
 });
 
 function renderTicker(news) {

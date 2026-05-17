@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ]);
 
         renderTicker(news);
+        renderCompareTable(hustles);
         renderHustles(hustles, 'time');
         renderTools(tools, 'writing');
         renderCreators(creators);
@@ -28,6 +29,20 @@ function renderTicker(news) {
     const el = document.getElementById('newsTicker');
     const doubled = [...news, ...news];
     el.innerHTML = doubled.map(n => `<span>${n}</span>`).join('');
+}
+
+function renderCompareTable(hustles) {
+    const tbody = document.querySelector('#compareTable tbody');
+    const sorted = [...hustles].sort((a, b) => parseTime(a.timeToFirstDollar) - parseTime(b.timeToFirstDollar));
+    tbody.innerHTML = sorted.map(h => `
+        <tr>
+            <td><strong>${h.name}</strong></td>
+            <td>${h.startupCost}</td>
+            <td>${h.timeToFirstDollar}</td>
+            <td>${h.incomeRange}</td>
+            <td>${'&#9733;'.repeat(h.difficulty)}${'&#9734;'.repeat(5 - h.difficulty)}</td>
+        </tr>
+    `).join('');
 }
 
 function parseCost(cost) {
@@ -89,6 +104,11 @@ function renderHustles(hustles, sortBy) {
                     <span>${'&#9733;'.repeat(h.difficulty)}${'&#9734;'.repeat(5 - h.difficulty)}</span>
                 </div>
             </div>
+            <div class="income-source">Data: ${h.incomeSource}</div>
+            <div class="hustle-day-one">
+                <h4>Day 1: What to Do Right Now</h4>
+                <p>${h.dayOne}</p>
+            </div>
             <div class="hustle-tools">
                 <h4>Tools You Need</h4>
                 <div class="tool-chips">
@@ -96,10 +116,17 @@ function renderHustles(hustles, sortBy) {
                 </div>
             </div>
             <div class="hustle-steps">
-                <h4>How to Start</h4>
+                <h4>Step-by-Step Timeline</h4>
                 <ol>${h.steps.map(s => `<li>${s}</li>`).join('')}</ol>
             </div>
-            <div class="hustle-risk">${h.risk}</div>
+            <div class="hustle-risk">
+                <h4>&#9888; Risks</h4>
+                <p>${h.risk}</p>
+            </div>
+            <div class="hustle-mitigation">
+                <h4>&#128161; How to Mitigate</h4>
+                <p>${h.riskMitigation}</p>
+            </div>
             <div class="hustle-case">
                 <div class="case-result">${h.caseStudy.who} — ${h.caseStudy.result}</div>
                 <p class="case-detail">${h.caseStudy.detail}</p>

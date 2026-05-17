@@ -1,47 +1,47 @@
 [
   {
     "company": "Medvi",
-    "founders": "Matthew Gallagher",
-    "story": "A 41-year-old from LA used $20,000 and AI tools to build a telehealth company from his house. No coding background — AI wrote the code, produced marketing, and handled operations. Only 2 employees: him and his brother.",
-    "revenue": "$401M in Year 1, $1.8B run rate in Year 2",
-    "team": "2 people",
+    "founders": "Matthew Gallagher (41岁，无编程背景)",
+    "story": "一个41岁的洛杉矶普通人，用$20,000和AI工具从家里建起了一家远程医疗公司。AI负责写代码、做营销、处理运营。公司只有2个员工：他和他弟弟。",
+    "revenue": "第1年$4.01亿，第2年$18亿运行率",
+    "team": "2人",
     "source": "https://www.forbes.com/sites/josipamajic/2026/04/02/ai-and-20000-helped-one-man-build-a-18-billion-telehealth-startup/",
-    "highlight": "$20K investment → $401M revenue in 12 months with just 2 employees"
+    "highlight": "$2万投入 → 12个月内$4.01亿收入，仅2名员工"
   },
   {
-    "company": "Tibo's AI Portfolio (Tweet Hunter, Taplio, Outrank, Revid)",
-    "founders": "Tibo Louis-Lucas",
-    "story": "A French solo maker who built and launched a new product every month until one took off. Bootstrapped 5 AI-powered SaaS products, sold Tweet Hunter & Taplio for $10M+, now earns $1M+/month across his portfolio.",
-    "revenue": "$1M+/month (portfolio), $10M+ exit",
-    "team": "Solo founder + 10 contractors",
-    "source": "https://foundingjourney.com/p/tibo",
-    "highlight": "Built 11 products in 11 months — one became a multi-million dollar exit"
+    "company": "Justin Parnell AI Consulting",
+    "founders": "Justin Parnell (39岁，前VP转型)",
+    "story": "36岁辞去VP职位，成为AI咨询师。用AI Agent处理从开发票到写提案的所有事务，完全不需要雇员。为企业定制AI Agent，每个项目收费数千美元。",
+    "revenue": "AI咨询时薪$150-300+",
+    "team": "1人（纯AI辅助）",
+    "source": "https://www.businessinsider.com/solopreneur-ai-agents-dont-need-to-hire-staff-2026-2",
+    "highlight": "用AI Agent替代员工，一个人运营整个咨询业务"
   },
   {
     "company": "HeadshotPro",
-    "founders": "Danny Postma",
-    "story": "A Dutch indie hacker who built an AI headshot generator as a solo developer. No VC funding, no office. Grew to 80,000+ customers and $50K+/month through affiliate marketing and SEO — all while traveling the world.",
-    "revenue": "$50K+/month, 80,000+ customers",
-    "team": "1 person",
+    "founders": "Danny Postma (荷兰独立开发者)",
+    "story": "一个荷兰独立开发者，独自建了一个AI头像生成器。没有VC融资，没有办公室。通过联盟营销和SEO增长到8万+付费客户，月入$5万+，同时环游世界。",
+    "revenue": "$5万+/月，8万+客户",
+    "team": "1人",
     "source": "https://www.rewardful.com/case-studies/headshotpro",
-    "highlight": "One-person AI business serving 80,000+ paying customers"
+    "highlight": "一个人的AI产品服务8万+付费客户"
   },
   {
-    "company": "Pieter Levels' Portfolio (NomadList, RemoteOK, PhotoAI, InteriorAI)",
-    "founders": "Pieter Levels",
-    "story": "A Dutch developer who builds and runs multiple profitable products entirely solo from his laptop. No employees, no office, no VC. His AI products (PhotoAI, InteriorAI) added significantly to his $3M+ ARR portfolio.",
-    "revenue": "$3M+ ARR (all products combined)",
-    "team": "1 person, 0 employees",
-    "source": "https://success.com/success-edge/the-neurological-edge",
-    "highlight": "Manages a $3M ARR portfolio completely alone — the OG indie hacker"
+    "company": "AI Chatbot Builder (Side Hustle School案例)",
+    "founders": "匿名女性创业者（无代码背景）",
+    "story": "用无代码工具为企业高管构建AI聊天机器人，帮助他们起草LinkedIn帖子、总结会议纪要、生成周报。每个机器人收费$500-1500，外加月度维护费。几个月内达到$1000+月收入。",
+    "revenue": "$500-1500/个 + 月度维护费",
+    "team": "1人",
+    "source": "https://sidehustleschool.com/guides/ai-side-hustles/",
+    "highlight": "无代码背景，周末就能完成一个项目，持续被动收入"
   },
   {
-    "company": "Base44",
-    "founders": "Maor Shlomo",
-    "story": "An Israeli developer who built an AI-powered app builder in early 2025. Hit $1M ARR within just 3 weeks of launch — one of the fastest solo-built products to reach that milestone.",
-    "revenue": "$1M ARR in 3 weeks",
-    "team": "Solo developer",
+    "company": "Pieter Levels 产品组合",
+    "founders": "Pieter Levels (荷兰开发者)",
+    "story": "完全独自一人从笔记本电脑运营多个盈利产品。没有员工、没有办公室、没有VC。他的AI产品（PhotoAI、InteriorAI）为他的$300万+年收入组合贡献了重要份额。",
+    "revenue": "$300万+ ARR（所有产品合计）",
+    "team": "1人，0员工",
     "source": "https://success.com/success-edge/the-neurological-edge",
-    "highlight": "From launch to $1M ARR in just 21 days — solo"
+    "highlight": "完全独自管理$300万年收入产品组合——独立开发者的标杆"
   }
 ]

@@ -1043,12 +1043,6 @@ body {
     font-weight: 600;
 }
 
-/* Messages / Giscus */
-.giscus-wrap {
-    max-width: 720px;
-    margin: 0 auto;
-}
-
 /* Animations */
 .fade-in {
     opacity: 0;

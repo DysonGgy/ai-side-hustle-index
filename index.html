@@ -7,113 +7,132 @@
     <meta name="keywords" content="AI side hustle, side income, freelance, beginner side hustle, make money online">
     <meta name="robots" content="index, follow">
     <title>AI Side Hustle Index — The Simplest AI Side Hustle List for Beginners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Google AdSense placeholder -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXX" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <!-- Section 1: Top Navigation -->
-    <header class="header" id="top">
-        <div class="container header-inner">
-            <div class="logo">
-                <span class="logo-icon">&#9670;</span>
-                <h1>AI Side Hustle Index</h1>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="#1d1d1f"/>
+                    <path d="M8 14l4 4 8-8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>AI Side Hustle Index</span>
+            </a>
+            <div class="nav-links">
+                <a href="#rankings">Rankings</a>
+                <a href="#categories">Library</a>
+                <a href="#creators">Creators</a>
             </div>
-            <p class="slogan">The simplest AI side hustle list for beginners.</p>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search side hustles..." aria-label="Search side hustles">
+            <div class="nav-search">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M11 11l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search..." aria-label="Search side hustles">
             </div>
         </div>
-        <div class="news-ticker">
-            <div class="ticker-wrap">
-                <div class="ticker" id="newsTicker"></div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Discover AI-Powered<br>Side Hustles</h1>
+            <p class="hero-subtitle fade-in">The simplest, most honest index of AI side hustles for beginners.<br>No hype. No courses. Just real opportunities.</p>
+            <div class="hero-ticker">
+                <div class="ticker-track" id="newsTicker"></div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Ad: Top Banner -->
-    <div class="ad-slot ad-top">
-        <span class="ad-label">Advertisement</span>
-    </div>
+    <!-- Ad: Top -->
+    <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <main class="container">
-        <!-- Section 2: Daily Rankings -->
-        <section class="section" id="rankings">
-            <h2 class="section-title">Today's Top AI Side Hustles</h2>
-            <p class="section-subtitle">Updated daily — objective ranking, no hype.</p>
-            <div class="rankings-table" id="rankingsTable"></div>
-        </section>
-
-        <!-- Ad: After Rankings -->
-        <div class="ad-slot ad-inline">
-            <span class="ad-label">Advertisement</span>
-        </div>
-
-        <!-- Section 3: Category Library -->
-        <section class="section" id="categories">
-            <h2 class="section-title">AI Side Hustle Library</h2>
-            <p class="section-subtitle">Browse by category — find what fits your skills and schedule.</p>
-
-            <div class="category-tabs">
-                <button class="tab active" data-category="light">Light Daily Hustle</button>
-                <button class="tab" data-category="service">Online Service</button>
-                <button class="tab" data-category="content">Content Creation</button>
-                <button class="tab" data-category="crossborder">Cross-border Hustle</button>
+    <!-- Rankings -->
+    <section class="section" id="rankings">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-eyebrow">Updated Daily</h2>
+                <h3 class="section-title">Today's Top 8</h3>
+                <p class="section-desc">Objective rankings based on accessibility, earning potential, and community feedback.</p>
             </div>
-            <div class="category-cards" id="categoryCards"></div>
-        </section>
-
-        <!-- Ad: Mid Content -->
-        <div class="ad-slot ad-inline">
-            <span class="ad-label">Advertisement</span>
+            <div class="rankings-grid" id="rankingsTable"></div>
         </div>
+    </section>
 
-        <!-- Section 4: Featured Creator Cases -->
-        <section class="section" id="creators">
-            <h2 class="section-title">Featured Creator Cases</h2>
-            <p class="section-subtitle">Real creators sharing real experiences — watch on their original platforms.</p>
-            <div class="creator-grid" id="creatorGrid"></div>
-        </section>
-    </main>
+    <!-- Ad: Mid -->
+    <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
 
-    <!-- Ad: Bottom Banner -->
-    <div class="ad-slot ad-bottom">
-        <span class="ad-label">Advertisement</span>
-    </div>
+    <!-- Categories -->
+    <section class="section section-gray" id="categories">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-eyebrow">Explore</h2>
+                <h3 class="section-title">Side Hustle Library</h3>
+                <p class="section-desc">Browse by category. Find what fits your skills and schedule.</p>
+            </div>
+            <div class="tabs" role="tablist">
+                <button class="tab active" data-category="light" role="tab">Light Daily</button>
+                <button class="tab" data-category="service" role="tab">Online Service</button>
+                <button class="tab" data-category="content" role="tab">Content Creation</button>
+                <button class="tab" data-category="crossborder" role="tab">Cross-border</button>
+            </div>
+            <div class="cards-grid" id="categoryCards"></div>
+        </div>
+    </section>
 
-    <!-- Section 5: Footer Compliance -->
+    <!-- Ad: Mid 2 -->
+    <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
+
+    <!-- Creators -->
+    <section class="section" id="creators">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-eyebrow">Real Stories</h2>
+                <h3 class="section-title">Featured Creators</h3>
+                <p class="section-desc">Real people sharing real experiences. Watch on their original platforms.</p>
+            </div>
+            <div class="creators-grid" id="creatorGrid"></div>
+        </div>
+    </section>
+
+    <!-- Ad: Bottom -->
+    <div class="ad-slot"><span class="ad-label">Advertisement</span></div>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-inner">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>Disclaimer</h3>
+                    <h4>Disclaimer</h4>
                     <p>This website is an index of publicly available internet content. It does not constitute investment advice. All side hustles carry inherent risks. Please do your own research before starting any venture.</p>
                 </div>
                 <div class="footer-col">
-                    <h3>Copyright Statement</h3>
-                    <p>All videos and external content are the property of their original creators. This site does not store, host, re-upload, or re-edit any third-party content. We only display publicly available thumbnails and link to original sources.</p>
+                    <h4>Copyright</h4>
+                    <p>All videos and external content are the property of their original creators. This site does not store, host, re-upload, or re-edit any third-party content.</p>
                 </div>
                 <div class="footer-col">
-                    <h3>DMCA Notice</h3>
-                    <p>If you are the original creator and wish to have your content link removed from this site, please contact us. We will remove it within 24 hours, no questions asked.</p>
-                    <p>Contact: dmca@aisidehustleindex.com</p>
+                    <h4>DMCA Notice</h4>
+                    <p>If you are the original creator and wish to have your content link removed, please contact us. We will remove it within 24 hours, no questions asked.</p>
+                    <p class="footer-contact">dmca@aisidehustleindex.com</p>
                 </div>
                 <div class="footer-col">
-                    <h3>Privacy Policy</h3>
-                    <p>This site uses Google AdSense for advertising. Third-party vendors, including Google, use cookies to serve ads based on your prior visits. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+                    <h4>Privacy Policy</h4>
+                    <p>This site uses Google AdSense for advertising. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AI Side Hustle Index. All rights reserved. For informational purposes only.</p>
-                <p class="update-log">Last updated: <span id="lastUpdated"></span></p>
+                <p>&copy; 2024 AI Side Hustle Index. All rights reserved.</p>
+                <p>Last updated: <span id="lastUpdated"></span></p>
             </div>
         </div>
     </footer>
-
-    <!-- Floating Side Ad (PC only) -->
-    <aside class="ad-sidebar" aria-label="Advertisement">
-        <span class="ad-label">Ad</span>
-    </aside>
 
     <script src="script.js"></script>
 </body>

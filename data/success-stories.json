@@ -2,7 +2,7 @@
   {
     "company": "Medvi",
     "founders": "Matthew Gallagher (41岁，无编程背景)",
-    "story": "一个41岁的洛杉矶普通人，用$20,000和AI工具从家里建起了一家远程医疗公司。AI负责写代码、做营销、处理运营。公司只有2个员工：他和他弟弟。",
+    "story": "41岁的洛杉矶普通人，用$20,000和AI工具从零建起远程医疗公司。AI负责写代码、做营销、处理运营，公司只有他和他弟弟两人。",
     "revenue": "第1年$4.01亿，第2年$18亿运行率",
     "team": "2人",
     "source": "https://www.forbes.com/sites/josipamajic/2026/04/02/ai-and-20000-helped-one-man-build-a-18-billion-telehealth-startup/",
@@ -11,7 +11,7 @@
   {
     "company": "Justin Parnell AI Consulting",
     "founders": "Justin Parnell (39岁，前VP转型)",
-    "story": "36岁辞去VP职位，成为AI咨询师。用AI Agent处理从开发票到写提案的所有事务，完全不需要雇员。为企业定制AI Agent，每个项目收费数千美元。",
+    "story": "36岁辞去VP职位转型AI咨询师。用AI Agent处理开发票、写提案等所有事务，为企业定制AI Agent，每个项目收费数千美元。",
     "revenue": "AI咨询时薪$150-300+",
     "team": "1人（纯AI辅助）",
     "source": "https://www.businessinsider.com/solopreneur-ai-agents-dont-need-to-hire-staff-2026-2",
@@ -20,28 +20,37 @@
   {
     "company": "HeadshotPro",
     "founders": "Danny Postma (荷兰独立开发者)",
-    "story": "一个荷兰独立开发者，独自建了一个AI头像生成器。没有VC融资，没有办公室。通过联盟营销和SEO增长到8万+付费客户，月入$5万+，同时环游世界。",
+    "story": "独自建了一个AI头像生成器，没有融资、没有办公室。通过联盟营销和SEO增长到8万+付费客户，同时环游世界。",
     "revenue": "$5万+/月，8万+客户",
     "team": "1人",
     "source": "https://www.rewardful.com/case-studies/headshotpro",
     "highlight": "一个人的AI产品服务8万+付费客户"
   },
   {
-    "company": "AI Chatbot Builder (Side Hustle School案例)",
+    "company": "AI Chatbot Builder",
     "founders": "匿名女性创业者（无代码背景）",
-    "story": "用无代码工具为企业高管构建AI聊天机器人，帮助他们起草LinkedIn帖子、总结会议纪要、生成周报。每个机器人收费$500-1500，外加月度维护费。几个月内达到$1000+月收入。",
+    "story": "用无代码工具为企业高管构建AI聊天机器人，帮助起草LinkedIn帖子、总结会议纪要、生成周报。每个机器人收费$500-1500，外加月度维护费。",
     "revenue": "$500-1500/个 + 月度维护费",
     "team": "1人",
     "source": "https://sidehustleschool.com/guides/ai-side-hustles/",
-    "highlight": "无代码背景，周末就能完成一个项目，持续被动收入"
+    "highlight": "无代码背景，周末完成一个项目，持续被动收入"
   },
   {
     "company": "Pieter Levels 产品组合",
-    "founders": "Pieter Levels (荷兰开发者)",
-    "story": "完全独自一人从笔记本电脑运营多个盈利产品。没有员工、没有办公室、没有VC。他的AI产品（PhotoAI、InteriorAI）为他的$300万+年收入组合贡献了重要份额。",
+    "founders": "Pieter Levels (荷兰独立开发者)",
+    "story": "完全独自从笔记本电脑运营多个盈利产品，没有员工、没有办公室、没有VC。他的AI产品（PhotoAI、InteriorAI）贡献了$300万+年收入的重要份额。",
     "revenue": "$300万+ ARR（所有产品合计）",
     "team": "1人，0员工",
-    "source": "https://success.com/success-edge/the-neurological-edge",
-    "highlight": "完全独自管理$300万年收入产品组合——独立开发者的标杆"
+    "source": "https://taskade.com/blog/one-person-companies",
+    "highlight": "独自管理$300万年收入产品组合——独立开发者标杆"
+  },
+  {
+    "company": "Base44",
+    "founders": "Maor Shlomo (以色列独立开发者)",
+    "story": "2025年初独自构建了一个AI应用开发平台，让非技术人员也能用AI生成完整应用。没有联合创始人、没有员工、没有外部团队。上线3周达到$100万ARR，6个月内获得25万用户。",
+    "revenue": "$100万 ARR（上线3周达成）",
+    "team": "1人",
+    "source": "https://www.alexcloudstar.com/blog/one-person-startup-scaling-2026",
+    "highlight": "一个人3周做到$100万年收入，6个月25万用户"
   }
 ]

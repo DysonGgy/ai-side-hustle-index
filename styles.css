@@ -872,50 +872,23 @@ body {
     line-height: 1.5;
 }
 
-.newsletter-form {
-    display: flex;
-    gap: 10px;
-    max-width: 440px;
-    margin: 0 auto 16px;
-}
-
-.newsletter-form input[type="email"] {
-    flex: 1;
-    padding: 14px 18px;
-    border: 1px solid var(--gray-700);
-    border-radius: 10px;
-    background: var(--gray-900);
-    color: var(--white);
-    font-size: 0.95rem;
-    font-family: var(--font);
-    outline: none;
-    transition: border-color 0.2s;
-}
-
-.newsletter-form input[type="email"]:focus {
-    border-color: var(--blue);
-}
-
-.newsletter-form input[type="email"]::placeholder {
-    color: var(--gray-500);
-}
-
-.newsletter-form button {
-    padding: 14px 24px;
+.newsletter-btn {
+    display: inline-block;
+    padding: 16px 40px;
     background: var(--blue);
     color: var(--white);
-    border: none;
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: var(--font);
-    cursor: pointer;
-    transition: background 0.2s;
-    white-space: nowrap;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+    margin-bottom: 16px;
 }
 
-.newsletter-form button:hover {
+.newsletter-btn:hover {
     background: var(--blue-hover);
+    transform: translateY(-1px);
 }
 
 .newsletter-note {
@@ -924,9 +897,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .newsletter-form {
-        flex-direction: column;
-    }
     .newsletter-title {
         font-size: 1.4rem;
     }

@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ]);
 
         renderTicker(news);
+        setupQuiz(hustles);
         renderCompareTable(hustles);
         renderHustles(hustles, 'time');
         renderTools(tools, 'writing');
@@ -31,20 +32,83 @@ function renderTicker(news) {
     el.innerHTML = doubled.map(n => `<span>${n}</span>`).join('');
 }
 
+// --- Quiz / Interactive Recommendation ---
+function setupQuiz(hustles) {
+    const quizEl = document.getElementById('quizContainer');
+    if (!quizEl) return;
+    quizEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('.quiz-option');
+        if (!btn) return;
+        const group = btn.closest('.quiz-group');
+        group.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        updateQuizResults(hustles);
+    });
+}
+
+function updateQuizResults(hustles) {
+    const skill = document.querySelector('[data-quiz="skill"] .quiz-option.selected');
+    const time = document.querySelector('[data-quiz="time"] .quiz-option.selected');
+    const goal = document.querySelector('[data-quiz="goal"] .quiz-option.selected');
+    const resultEl = document.getElementById('quizResults');
+
+    if (!skill || !time || !goal) {
+        resultEl.innerHTML = '';
+        return;
+    }
+
+    const skillVal = skill.dataset.value;
+    const timeVal = time.dataset.value;
+    const goalVal = goal.dataset.value;
+
+    const scored = hustles.map(h => {
+        let score = 0;
+        if (skillVal === 'none' && h.tags.includes('no-code')) score += 3;
+        if (skillVal === 'creative' && h.tags.includes('creative')) score += 3;
+        if (skillVal === 'technical' && h.tags.includes('technical')) score += 3;
+        if (skillVal === 'writing' && h.tags.includes('writing')) score += 3;
+        if (timeVal === 'minimal' && h.difficulty <= 1) score += 2;
+        if (timeVal === 'moderate' && h.difficulty <= 2) score += 2;
+        if (timeVal === 'full' && h.difficulty >= 2) score += 1;
+        if (goalVal === 'fast' && h.tags.includes('fast-start')) score += 3;
+        if (goalVal === 'high' && h.tags.includes('high-income')) score += 3;
+        if (goalVal === 'passive' && h.tags.includes('passive-income')) score += 3;
+        return { ...h, score };
+    }).sort((a, b) => b.score - a.score).slice(0, 3);
+
+    resultEl.innerHTML = `
+        <h4>Your Top Matches</h4>
+        <div class="quiz-matches">
+            ${scored.map((h, i) => `
+                <a href="#hustles" class="quiz-match">
+                    <span class="match-rank">#${i + 1}</span>
+                    <span class="match-name">${h.name}</span>
+                    <span class="match-meta">${h.incomeRange} · ${h.timeToFirstDollar}</span>
+                </a>
+            `).join('')}
+        </div>
+    `;
+}
+
+// --- Compare Table ---
 function renderCompareTable(hustles) {
     const tbody = document.querySelector('#compareTable tbody');
+    if (!tbody) return;
     const sorted = [...hustles].sort((a, b) => parseTime(a.timeToFirstDollar) - parseTime(b.timeToFirstDollar));
+    const riskColors = { low: '#34c759', medium: '#ff9500', high: '#ff3b30' };
+    const trendLabels = { hot: '&#128293; Hot', rising: '&#8593; Rising', stable: '— Stable' };
     tbody.innerHTML = sorted.map(h => `
         <tr>
-            <td><strong>${h.name}</strong></td>
+            <td><strong>${h.name}</strong> <span class="table-trend">${trendLabels[h.trend] || ''}</span></td>
             <td>${h.startupCost}</td>
             <td>${h.timeToFirstDollar}</td>
             <td>${h.incomeRange}</td>
-            <td>${'&#9733;'.repeat(h.difficulty)}${'&#9734;'.repeat(5 - h.difficulty)}</td>
+            <td><span class="risk-dot" style="background:${riskColors[h.riskLevel]}"></span> ${h.riskLevel}</td>
         </tr>
     `).join('');
 }
 
+// --- Parse helpers ---
 function parseCost(cost) {
     const match = cost.match(/\$(\d+)/);
     return match ? parseInt(match[1]) : 0;
@@ -77,71 +141,60 @@ function sortHustles(hustles, sortBy) {
     return sorted;
 }
 
+// --- Hustle Cards (collapsible) ---
 function renderHustles(hustles, sortBy) {
     const el = document.getElementById('hustlesGrid');
     const sorted = sortHustles(hustles, sortBy);
+    const riskLabels = { low: 'Low Risk', medium: 'Med Risk', high: 'High Risk' };
+    const riskClasses = { low: 'risk-low', medium: 'risk-med', high: 'risk-high' };
+    const trendIcons = { hot: '&#128293;', rising: '&#8599;', stable: '' };
+
     el.innerHTML = sorted.map(h => `
-        <div class="hustle-detail-card fade-in" data-name="${h.name.toLowerCase()}">
-            <div class="hustle-header">
-                <h3>${h.name}</h3>
-                <p class="hustle-tagline">${h.tagline}</p>
-            </div>
-            <div class="hustle-metrics">
-                <div class="metric-badge metric-time">
-                    <span class="metric-icon">&#9200;</span>
-                    <span>${h.timeToFirstDollar}</span>
+        <div class="hustle-detail-card fade-in" data-name="${h.name.toLowerCase()}" data-tags="${h.tags.join(' ')}">
+            <div class="hustle-summary" onclick="this.parentElement.classList.toggle('expanded')">
+                <div class="hustle-header">
+                    <h3>${h.name} ${trendIcons[h.trend] ? '<span class="trend-badge trend-' + h.trend + '">' + trendIcons[h.trend] + ' ' + h.trend + '</span>' : ''}</h3>
+                    <p class="hustle-tagline">${h.tagline}</p>
                 </div>
-                <div class="metric-badge metric-cost">
-                    <span class="metric-icon">&#128176;</span>
-                    <span>${h.startupCost}</span>
+                <div class="hustle-metrics">
+                    <div class="metric-badge metric-time"><span class="metric-icon">&#9200;</span><span>${h.timeToFirstDollar}</span></div>
+                    <div class="metric-badge metric-cost"><span class="metric-icon">&#128176;</span><span>${h.startupCost}</span></div>
+                    <div class="metric-badge metric-income"><span class="metric-icon">&#128200;</span><span>${h.incomeRange}</span></div>
+                    <div class="metric-badge ${riskClasses[h.riskLevel]}"><span class="metric-icon">&#9888;</span><span>${riskLabels[h.riskLevel]}</span></div>
                 </div>
-                <div class="metric-badge metric-income">
-                    <span class="metric-icon">&#128200;</span>
-                    <span>${h.incomeRange}</span>
+                <div class="expand-hint">&#9662; Click for full details</div>
+            </div>
+            <div class="hustle-details">
+                <div class="income-source">&#128202; Data: ${h.incomeSource}</div>
+                <div class="hustle-day-one">
+                    <h4>&#127937; Day 1: What to Do Right Now</h4>
+                    <p>${h.dayOne}</p>
                 </div>
-                <div class="metric-badge metric-diff">
-                    <span class="metric-icon">&#9733;</span>
-                    <span>${'&#9733;'.repeat(h.difficulty)}${'&#9734;'.repeat(5 - h.difficulty)}</span>
+                <div class="hustle-tools">
+                    <h4>Tools You Need</h4>
+                    <div class="tool-chips">${h.tools.map(t => `<a href="${t.url}" target="_blank" rel="noopener" class="tool-chip">${t.name} <span class="tool-price">${t.price}</span></a>`).join('')}</div>
                 </div>
-            </div>
-            <div class="income-source">Data: ${h.incomeSource}</div>
-            <div class="hustle-day-one">
-                <h4>Day 1: What to Do Right Now</h4>
-                <p>${h.dayOne}</p>
-            </div>
-            <div class="hustle-tools">
-                <h4>Tools You Need</h4>
-                <div class="tool-chips">
-                    ${h.tools.map(t => `<a href="${t.url}" target="_blank" rel="noopener" class="tool-chip">${t.name} <span class="tool-price">${t.price}</span></a>`).join('')}
+                <div class="hustle-steps">
+                    <h4>Step-by-Step Timeline</h4>
+                    <ol>${h.steps.map(s => `<li>${s}</li>`).join('')}</ol>
                 </div>
-            </div>
-            <div class="hustle-steps">
-                <h4>Step-by-Step Timeline</h4>
-                <ol>${h.steps.map(s => `<li>${s}</li>`).join('')}</ol>
-            </div>
-            <div class="hustle-risk">
-                <h4>&#9888; Risks</h4>
-                <p>${h.risk}</p>
-            </div>
-            <div class="hustle-mitigation">
-                <h4>&#128161; How to Mitigate</h4>
-                <p>${h.riskMitigation}</p>
-            </div>
-            <div class="hustle-case">
-                <div class="case-result">${h.caseStudy.who} — ${h.caseStudy.result}</div>
-                <p class="case-detail">${h.caseStudy.detail}</p>
-                <a href="${h.caseStudy.source}" target="_blank" rel="noopener" class="case-source">Source &rarr;</a>
-            </div>
-            <div class="hustle-video">
-                <a href="${h.videoUrl}" target="_blank" rel="noopener" class="video-link">
-                    <span class="video-play">&#9654;</span> Watch: ${h.videoAuthor} (${h.videoViews} views)
-                </a>
+                <div class="hustle-risk"><h4>&#9888; Risks</h4><p>${h.risk}</p></div>
+                <div class="hustle-mitigation"><h4>&#128161; How to Mitigate</h4><p>${h.riskMitigation}</p></div>
+                <div class="hustle-case">
+                    <div class="case-result">&#128100; ${h.caseStudy.who} — ${h.caseStudy.result}</div>
+                    <p class="case-detail">${h.caseStudy.detail}</p>
+                    <a href="${h.caseStudy.source}" target="_blank" rel="noopener" class="case-source">&#128279; Verified Source &rarr;</a>
+                </div>
+                <div class="hustle-video">
+                    <a href="${h.videoUrl}" target="_blank" rel="noopener" class="video-link"><span class="video-play">&#9654;</span> Watch: ${h.videoAuthor} (${h.videoViews} views)</a>
+                </div>
             </div>
         </div>
     `).join('');
     setupScrollAnimations();
 }
 
+// --- Tools ---
 function renderTools(tools, category) {
     const el = document.getElementById('toolsGrid');
     const items = tools[category] || [];
@@ -155,6 +208,7 @@ function renderTools(tools, category) {
     setupScrollAnimations();
 }
 
+// --- Creators ---
 function renderCreators(creators) {
     const el = document.getElementById('creatorGrid');
     el.innerHTML = creators.map(c => `
@@ -174,6 +228,7 @@ function renderCreators(creators) {
     setupScrollAnimations();
 }
 
+// --- Success Stories ---
 function renderSuccessStories(stories) {
     const el = document.getElementById('successGrid');
     el.innerHTML = stories.map(s => `
@@ -192,6 +247,7 @@ function renderSuccessStories(stories) {
     setupScrollAnimations();
 }
 
+// --- Setup ---
 function setupSortButtons(hustles) {
     document.querySelectorAll('.sort-btn').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -214,6 +270,7 @@ function setupToolTabs(tools) {
 
 function setupSearch() {
     const input = document.getElementById('searchInput');
+    if (!input) return;
     input.addEventListener('input', () => {
         const q = input.value.toLowerCase().trim();
         document.querySelectorAll('[data-name]').forEach(el => {

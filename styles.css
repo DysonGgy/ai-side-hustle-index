@@ -264,17 +264,86 @@ body {
 .hustle-detail-card {
     background: var(--white);
     border-radius: var(--radius-md);
-    padding: 32px;
+    padding: 0;
     box-shadow: var(--shadow-sm);
     border: 1px solid rgba(0,0,0,0.04);
     transition: all var(--transition);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    overflow: hidden;
 }
 
 .hustle-detail-card:hover {
     box-shadow: var(--shadow-md);
+}
+
+.hustle-summary {
+    padding: 28px 32px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hustle-summary:hover {
+    background: rgba(0,0,0,0.01);
+}
+
+.hustle-details {
+    display: none;
+    padding: 0 32px 32px;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid var(--gray-100);
+}
+
+.hustle-detail-card.expanded .hustle-details {
+    display: flex;
+}
+
+.hustle-detail-card.expanded .expand-hint {
+    display: none;
+}
+
+.expand-hint {
+    font-size: 13px;
+    color: var(--gray-400);
+    text-align: center;
+    padding-top: 4px;
+}
+
+/* Risk badges */
+.risk-low { background: rgba(52,199,89,0.1); color: #1a8a3e; }
+.risk-med { background: rgba(255,149,0,0.1); color: #b36b00; }
+.risk-high { background: rgba(255,59,48,0.1); color: var(--red); }
+
+/* Trend badges */
+.trend-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 100px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.trend-hot { background: rgba(255,59,48,0.08); color: var(--red); }
+.trend-rising { background: rgba(0,113,227,0.08); color: var(--blue); }
+
+/* Table extras */
+.table-trend {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.risk-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
 }
 
 .hustle-header h3 {
@@ -829,63 +898,103 @@ body {
     color: var(--gray-400);
 }
 
-/* Starter Guide */
-.guide-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
+/* Quiz / Interactive Recommendation */
+.quiz-container {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
-.guide-card {
-    background: var(--white);
-    border-radius: var(--radius-md);
-    padding: 28px;
-    box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(0,0,0,0.04);
-    transition: all var(--transition);
+.quiz-group {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.guide-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+.quiz-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
 }
 
-.guide-icon {
-    font-size: 32px;
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.guide-card h4 {
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
-}
-
-.guide-sub {
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--gray-500);
-}
-
-.guide-card p {
-    font-size: 14px;
-    color: var(--gray-500);
-    line-height: 1.6;
-}
-
-.guide-link {
+.quiz-option {
+    padding: 10px 20px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 100px;
+    background: var(--white);
+    color: var(--gray-700);
     font-size: 14px;
     font-weight: 500;
-    color: var(--blue);
-    text-decoration: none;
-    margin-top: auto;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all var(--transition);
 }
 
-.guide-link:hover {
-    text-decoration: underline;
+.quiz-option:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.quiz-option.selected {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+#quizResults h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.quiz-matches {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quiz-match {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--black);
+    transition: all var(--transition);
+}
+
+.quiz-match:hover {
+    background: rgba(0,113,227,0.06);
+    transform: translateX(4px);
+}
+
+.match-rank {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue);
+    min-width: 32px;
+}
+
+.match-name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.match-meta {
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--gray-500);
 }
 
 /* Compare Table */

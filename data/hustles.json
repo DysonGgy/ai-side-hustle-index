@@ -7,6 +7,9 @@
     "startupCost": "$20/month",
     "incomeRange": "$2,000-10,000/month",
     "incomeSource": "Upwork 2026 freelance rate data; Cliptics.com AI side hustle survey",
+    "riskLevel": "low",
+    "trend": "stable",
+    "tags": ["writing", "no-code", "fast-start", "low-cost"],
     "tools": [
       { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
       { "name": "Grammarly", "url": "https://grammarly.com", "price": "$12/mo" },
@@ -40,6 +43,9 @@
     "startupCost": "$10-30/month",
     "incomeRange": "$1,000-8,000/month",
     "incomeSource": "Fiverr AI art gig pricing data; Printify seller reports; Upwork AI design category",
+    "riskLevel": "medium",
+    "trend": "hot",
+    "tags": ["design", "no-code", "fast-start", "low-cost", "creative"],
     "tools": [
       { "name": "Midjourney", "url": "https://midjourney.com", "price": "$10-30/mo" },
       { "name": "Canva Pro", "url": "https://canva.com", "price": "$15/mo" },
@@ -73,6 +79,9 @@
     "startupCost": "$24-55/month",
     "incomeRange": "$1,500-6,000/month",
     "incomeSource": "Marksinsights.com AI services report; Upwork content repurposing gig data",
+    "riskLevel": "low",
+    "trend": "rising",
+    "tags": ["video", "no-code", "fast-start", "creative"],
     "tools": [
       { "name": "Descript", "url": "https://descript.com", "price": "$24/mo" },
       { "name": "Opus Clip", "url": "https://opus.pro", "price": "Free / $15/mo" },
@@ -106,6 +115,9 @@
     "startupCost": "$0-50/month",
     "incomeRange": "$3,000-15,000/month",
     "incomeSource": "Side Hustle School case studies; Upwork AI chatbot category pricing",
+    "riskLevel": "medium",
+    "trend": "hot",
+    "tags": ["automation", "no-code", "high-income", "low-cost", "technical"],
     "tools": [
       { "name": "Voiceflow", "url": "https://voiceflow.com", "price": "Free tier" },
       { "name": "Botpress", "url": "https://botpress.com", "price": "Free tier" },
@@ -139,6 +151,9 @@
     "startupCost": "$20-50/month",
     "incomeRange": "$3,000-12,000/month",
     "incomeSource": "Upwork 2026 AI integration demand (+178% YoY); SideQuestHustle rate survey",
+    "riskLevel": "medium",
+    "trend": "hot",
+    "tags": ["automation", "technical", "high-income"],
     "tools": [
       { "name": "Make.com", "url": "https://make.com", "price": "$9-16/mo" },
       { "name": "Zapier", "url": "https://zapier.com", "price": "Free / $20/mo" },
@@ -172,6 +187,9 @@
     "startupCost": "$50-100/month",
     "incomeRange": "$1,000-10,000/month",
     "incomeSource": "Mark Tilbury documented experiment; Shopify merchant data; SideQuestHustle report",
+    "riskLevel": "high",
+    "trend": "stable",
+    "tags": ["ecommerce", "technical", "high-income"],
     "tools": [
       { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
       { "name": "Shopify", "url": "https://shopify.com", "price": "$39/mo" },
@@ -205,6 +223,9 @@
     "startupCost": "$20-50/month",
     "incomeRange": "$500-5,000/month (after monetization)",
     "incomeSource": "Fiverr Business Trends Index 2025 (+488% search growth); YouTube CPM public data",
+    "riskLevel": "high",
+    "trend": "rising",
+    "tags": ["video", "creative", "passive-income", "low-cost"],
     "tools": [
       { "name": "ChatGPT Plus", "url": "https://chat.openai.com", "price": "$20/mo" },
       { "name": "ElevenLabs", "url": "https://elevenlabs.io", "price": "$5-22/mo" },
@@ -238,6 +259,9 @@
     "startupCost": "$10-30/month",
     "incomeRange": "$500-19,000/month",
     "incomeSource": "compressjpeg.com public traffic data (SimilarWeb); Google AdSense CPM benchmarks",
+    "riskLevel": "medium",
+    "trend": "rising",
+    "tags": ["technical", "passive-income", "low-cost"],
     "tools": [
       { "name": "Cursor / Bolt.new", "url": "https://cursor.com", "price": "$20/mo" },
       { "name": "Vercel", "url": "https://vercel.com", "price": "Free tier" },

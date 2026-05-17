@@ -57,36 +57,36 @@
         <div class="section-container">
             <div class="section-header fade-in">
                 <h2 class="section-eyebrow">New to This?</h2>
-                <h3 class="section-title">Start Here</h3>
-                <p class="section-desc">Answer 3 questions to find the right AI side hustle for you.</p>
+                <h3 class="section-title">Find Your Match in 30 Seconds</h3>
+                <p class="section-desc">Answer 3 questions. We'll recommend the best AI side hustle for you.</p>
             </div>
-            <div class="starter-guide fade-in" id="starterGuide">
-                <div class="guide-cards">
-                    <div class="guide-card">
-                        <div class="guide-icon">&#128337;</div>
-                        <h4>I want money FAST<br><span class="guide-sub">First income in 1-2 weeks</span></h4>
-                        <p>AI Writing, Image Generation, or Content Repurposing. Low barrier, quick start. You can earn within days if you hustle.</p>
-                        <a href="#hustles" class="guide-link">See fastest options &darr;</a>
-                    </div>
-                    <div class="guide-card">
-                        <div class="guide-icon">&#128176;</div>
-                        <h4>I want HIGH income<br><span class="guide-sub">$5,000+/month potential</span></h4>
-                        <p>AI Chatbots, Automation Workflows, or Dropshipping. Higher skill ceiling, but income scales with expertise.</p>
-                        <a href="#hustles" class="guide-link">See highest-paying options &darr;</a>
-                    </div>
-                    <div class="guide-card">
-                        <div class="guide-icon">&#127919;</div>
-                        <h4>I have ZERO skills<br><span class="guide-sub">No coding, no design, no writing</span></h4>
-                        <p>Start with AI Image Generation (Midjourney) or Content Repurposing (Opus Clip). Both need zero prior skills — just follow the tools.</p>
-                        <a href="#hustles" class="guide-link">See easiest options &darr;</a>
-                    </div>
-                    <div class="guide-card">
-                        <div class="guide-icon">&#128640;</div>
-                        <h4>I want PASSIVE income<br><span class="guide-sub">Build once, earn repeatedly</span></h4>
-                        <p>Faceless YouTube or AI Website Builder. Takes months to start earning, but income continues with minimal maintenance.</p>
-                        <a href="#hustles" class="guide-link">See passive options &darr;</a>
+            <div class="quiz-container fade-in" id="quizContainer">
+                <div class="quiz-group" data-quiz="skill">
+                    <p class="quiz-label">1. What's your strongest skill?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="none">No special skills</button>
+                        <button class="quiz-option" data-value="writing">Writing</button>
+                        <button class="quiz-option" data-value="creative">Design / Creative</button>
+                        <button class="quiz-option" data-value="technical">Technical / Logic</button>
                     </div>
                 </div>
+                <div class="quiz-group" data-quiz="time">
+                    <p class="quiz-label">2. How much time can you invest weekly?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="minimal">5-10 hours</button>
+                        <button class="quiz-option" data-value="moderate">10-20 hours</button>
+                        <button class="quiz-option" data-value="full">20+ hours</button>
+                    </div>
+                </div>
+                <div class="quiz-group" data-quiz="goal">
+                    <p class="quiz-label">3. What matters most to you?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-option" data-value="fast">Fast first income</button>
+                        <button class="quiz-option" data-value="high">High income ceiling</button>
+                        <button class="quiz-option" data-value="passive">Passive / recurring</button>
+                    </div>
+                </div>
+                <div id="quizResults"></div>
             </div>
         </div>
     </section>

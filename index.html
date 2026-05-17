@@ -181,16 +181,25 @@
             <div class="section-header fade-in">
                 <h2 class="section-eyebrow">Community</h2>
                 <h3 class="section-title">Leave a Message</h3>
-                <p class="section-desc">Share your thoughts, questions, or progress. Messages are saved daily.</p>
+                <p class="section-desc">Share your thoughts, questions, or progress. Sign in with GitHub to comment.</p>
             </div>
-            <div class="message-box fade-in">
-                <form id="messageForm" class="message-form">
-                    <input type="text" id="msgName" placeholder="Your name" required maxlength="50">
-                    <textarea id="msgContent" placeholder="Write your message..." required maxlength="500" rows="3"></textarea>
-                    <button type="submit" class="msg-submit" id="msgSubmit">Submit</button>
-                </form>
-                <div id="msgStatus"></div>
-                <div id="msgList" class="message-list"></div>
+            <div class="giscus-wrap fade-in">
+                <script src="https://giscus.app/client.js"
+                    data-repo="DysonGgy/ai-side-hustle-index"
+                    data-repo-id=""
+                    data-category="General"
+                    data-category-id=""
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="top"
+                    data-theme="light"
+                    data-lang="en"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async>
+                </script>
             </div>
         </div>
     </section>

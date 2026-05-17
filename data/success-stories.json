@@ -1,0 +1,52 @@
+[
+  {
+    "company": "Cursor (Anysphere)",
+    "founders": "Michael Truell, Sualeh Asif, Arvid Lunnemark, Aman Sanger",
+    "story": "Four MIT students built an AI-powered code editor. In less than 4 years, they reached $2B in annualized revenue — the fastest-growing SaaS company in history.",
+    "valuation": "$29.3B (Nov 2025)",
+    "revenue": "$2B ARR",
+    "employees": "~100",
+    "source": "https://www.forbes.com/sites/rashishrivastava/2025/11/13/four-cofounders-of-popular-ai-coding-tool-cursor-are-now-billionaires/",
+    "highlight": "All 4 cofounders became billionaires in their 20s"
+  },
+  {
+    "company": "Midjourney",
+    "founders": "David Holz",
+    "story": "A self-funded AI image generation platform that became profitable within 6 months of launch. No venture capital, no office — just a small team building the most popular AI art tool.",
+    "valuation": "$10B",
+    "revenue": "$500M+ ARR",
+    "employees": "~40",
+    "source": "https://www.forbes.com/sites/elainepofeldt/2025/11/17/the-race-to-create-a-billion-dollar-one-person-business/",
+    "highlight": "$12.5M revenue per employee — highest in tech"
+  },
+  {
+    "company": "Bolt.new (StackBlitz)",
+    "founders": "Eric Simons",
+    "story": "After 7 years of grinding through failed startups (including living in AOL's HQ), Eric launched Bolt.new in Oct 2024. It hit $4M ARR in 30 days and $40M ARR in 5 months.",
+    "valuation": "$700M",
+    "revenue": "$40M ARR (5 months after launch)",
+    "employees": "~50",
+    "source": "https://www.growthunhinged.com/p/boltnew-growth-journey",
+    "highlight": "From $0 to $40M ARR in just 5 months"
+  },
+  {
+    "company": "Lovable",
+    "founders": "Anton Osika",
+    "story": "A Swedish AI app builder that became the fastest-growing software startup ever. From $0 to $400M ARR in under 18 months, enabling non-coders to build apps with AI.",
+    "valuation": "$6.6B",
+    "revenue": "$400M ARR (Feb 2026)",
+    "employees": "~146",
+    "source": "https://www.forbes.com/sites/iainmartin/2025/07/23/vibe-coding-turned-this-swedish-ai-unicorn-into-the-fastest-growing-software-startup-ever/",
+    "highlight": "Fastest software startup to $100M ARR in history"
+  },
+  {
+    "company": "Perplexity AI",
+    "founders": "Aravind Srinivas, Denis Yarats, Johnny Ho, Andy Konwinski",
+    "story": "An AI-powered search engine challenging Google. Founded in 2022, grew from $150M valuation to $20B in under 3 years — a 133x increase.",
+    "valuation": "$20B (Sep 2025)",
+    "revenue": "$500M ARR",
+    "employees": "~200",
+    "source": "https://economictimes.com/tech/artificial-intelligence/perplexity-ceo-says-revenue-hit-500-million-after-computer-pivot/articleshow/130251436.cms",
+    "highlight": "Revenue grew 5x from $100M to $500M in months"
+  }
+]

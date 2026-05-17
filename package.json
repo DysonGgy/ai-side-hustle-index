@@ -1,0 +1,24 @@
+{
+  "name": "ai-side-hustle-index",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DysonGgy/ai-side-hustle-index.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DysonGgy/ai-side-hustle-index/issues"
+  },
+  "homepage": "https://github.com/DysonGgy/ai-side-hustle-index#readme",
+  "dependencies": {
+    "https-proxy-agent": "^5.0.1",
+    "node-fetch": "^2.7.0"
+  }
+}

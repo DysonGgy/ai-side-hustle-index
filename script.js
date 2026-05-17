@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    const [rankings, categories, creators, news] = await Promise.all([
+    const [rankings, categories, creators, news, stories] = await Promise.all([
         fetch('data/rankings.json').then(r => r.json()),
         fetch('data/categories.json').then(r => r.json()),
         fetch('data/creators.json').then(r => r.json()),
-        fetch('data/news.json').then(r => r.json())
+        fetch('data/news.json').then(r => r.json()),
+        fetch('data/success-stories.json').then(r => r.json())
     ]);
 
     renderTicker(news);
     renderRankings(rankings);
     renderCategories(categories, 'light');
     renderCreators(creators);
+    renderSuccessStories(stories);
     setupTabs(categories);
     setupSearch();
     setupScrollAnimations();
@@ -84,6 +86,30 @@ function setupTabs(categories) {
             renderCategories(categories, tab.dataset.category);
         });
     });
+}
+
+function renderSuccessStories(stories) {
+    const el = document.getElementById('successGrid');
+    el.innerHTML = stories.map(s => `
+        <div class="success-card fade-in">
+            <div class="company-name">${s.company}</div>
+            <div class="founders">${s.founders}</div>
+            <p class="story">${s.story}</p>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-label">Valuation</div>
+                    <div class="metric-value">${s.valuation}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Revenue</div>
+                    <div class="metric-value">${s.revenue}</div>
+                </div>
+            </div>
+            <div class="highlight">${s.highlight}</div>
+            <a href="${s.source}" target="_blank" rel="noopener noreferrer" class="source-link">Read full story →</a>
+        </div>
+    `).join('');
+    setupScrollAnimations();
 }
 
 function setupSearch() {

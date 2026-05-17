@@ -1,0 +1,58 @@
+[
+  {
+    "rank": 1,
+    "name": "AI-Powered Freelance Writing",
+    "difficulty": 2,
+    "crowd": "Anyone who can type",
+    "intro": "Use AI to speed up research and drafting for blogs, newsletters, and web copy. Clients pay for polished content — AI helps you produce more in less time."
+  },
+  {
+    "rank": 2,
+    "name": "AI Photo Editing Service",
+    "difficulty": 2,
+    "crowd": "Photographers, social media managers",
+    "intro": "Offer bulk photo enhancement, background removal, and retouching services. AI handles the heavy lifting so you can serve more clients per day."
+  },
+  {
+    "rank": 3,
+    "name": "Print-on-Demand Design",
+    "difficulty": 3,
+    "crowd": "Creative people, designers",
+    "intro": "Create unique designs for t-shirts, mugs, and posters using AI image generation. Upload to POD platforms and earn royalties on every sale."
+  },
+  {
+    "rank": 4,
+    "name": "AI Video Subtitling & Translation",
+    "difficulty": 2,
+    "crowd": "Bilingual individuals, language learners",
+    "intro": "Provide subtitle and translation services for YouTube creators and businesses. AI transcribes and translates — you refine and deliver."
+  },
+  {
+    "rank": 5,
+    "name": "Social Media Management with AI",
+    "difficulty": 3,
+    "crowd": "Marketing enthusiasts, students",
+    "intro": "Manage multiple social accounts for small businesses. AI helps generate content calendars, captions, and hashtag strategies at scale."
+  },
+  {
+    "rank": 6,
+    "name": "AI Resume & Cover Letter Service",
+    "difficulty": 1,
+    "crowd": "Anyone with writing skills",
+    "intro": "Help job seekers craft tailored resumes and cover letters. AI assists with formatting and keyword optimization for ATS systems."
+  },
+  {
+    "rank": 7,
+    "name": "Niche Blog with AI Content",
+    "difficulty": 3,
+    "crowd": "Writers, hobbyists with niche knowledge",
+    "intro": "Build a niche blog on topics you know well. AI accelerates research and first drafts — you add expertise and personality for ad revenue."
+  },
+  {
+    "rank": 8,
+    "name": "AI-Assisted Virtual Bookkeeping",
+    "difficulty": 4,
+    "crowd": "Finance background, detail-oriented people",
+    "intro": "Offer bookkeeping services to small businesses. AI automates data entry and categorization — you handle review and client communication."
+  }
+]

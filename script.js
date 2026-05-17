@@ -32,6 +32,7 @@ function renderRankings(rankings) {
             <div class="rank-body">
                 <div class="rank-name">${item.name}</div>
                 <div class="rank-meta">${item.crowd}</div>
+                ${item.source ? `<div class="rank-source">${item.source}</div>` : ''}
             </div>
             <div class="rank-stars">${'★'.repeat(item.difficulty)}${'☆'.repeat(5 - item.difficulty)}</div>
         </div>

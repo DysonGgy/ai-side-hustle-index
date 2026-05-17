@@ -1,58 +1,66 @@
 [
   {
     "rank": 1,
-    "name": "AI-Powered Freelance Writing",
-    "difficulty": 2,
-    "crowd": "Anyone who can type",
-    "intro": "Use AI to speed up research and drafting for blogs, newsletters, and web copy. Clients pay for polished content — AI helps you produce more in less time."
+    "name": "AI Video Generation & Editing",
+    "difficulty": 3,
+    "crowd": "Content creators, marketers, beginners with creative sense",
+    "intro": "Upwork demand grew +329% YoY (2026 In-Demand Skills Report). Create marketing videos, explainers, and social content using AI tools like Synthesia and Runway.",
+    "source": "Upwork In-Demand Skills 2026 (+329%), Fiverr AI video creators (+66%)"
   },
   {
     "rank": 2,
-    "name": "AI Photo Editing Service",
-    "difficulty": 2,
-    "crowd": "Photographers, social media managers",
-    "intro": "Offer bulk photo enhancement, background removal, and retouching services. AI handles the heavy lifting so you can serve more clients per day."
+    "name": "Faceless YouTube Channel with AI",
+    "difficulty": 3,
+    "crowd": "Anyone with a niche interest, no camera needed",
+    "intro": "Fiverr searches for 'faceless YouTube video creator' surged +488% (Fall 2025 Business Trends Index). Use AI for scripts, voiceover, and editing to build channels that earn ad revenue.",
+    "source": "Fiverr Business Trends Index 2025 (+488% search growth)"
   },
   {
     "rank": 3,
-    "name": "Print-on-Demand Design",
-    "difficulty": 3,
-    "crowd": "Creative people, designers",
-    "intro": "Create unique designs for t-shirts, mugs, and posters using AI image generation. Upload to POD platforms and earn royalties on every sale."
+    "name": "AI Integration & Automation",
+    "difficulty": 4,
+    "crowd": "Tech-savvy individuals, no-code enthusiasts",
+    "intro": "Upwork demand grew +178% YoY. Help businesses connect AI tools to their workflows using Make, Zapier, and custom APIs. $100-250/hr potential.",
+    "source": "Upwork In-Demand Skills 2026 (+178%), Fiverr AI automation (+136%)"
   },
   {
     "rank": 4,
-    "name": "AI Video Subtitling & Translation",
+    "name": "AI Image Generation Services",
     "difficulty": 2,
-    "crowd": "Bilingual individuals, language learners",
-    "intro": "Provide subtitle and translation services for YouTube creators and businesses. AI transcribes and translates — you refine and deliver."
+    "crowd": "Design enthusiasts, social media users, hobbyists",
+    "intro": "Upwork demand grew +95% YoY. Use Midjourney, DALL-E, or Stable Diffusion to create images for businesses. $40-100/hr range.",
+    "source": "Upwork In-Demand Skills 2026 (+95%)"
   },
   {
     "rank": 5,
-    "name": "Social Media Management with AI",
-    "difficulty": 3,
-    "crowd": "Marketing enthusiasts, students",
-    "intro": "Manage multiple social accounts for small businesses. AI helps generate content calendars, captions, and hashtag strategies at scale."
+    "name": "AI-Enhanced Copywriting",
+    "difficulty": 2,
+    "crowd": "Writers, marketers, anyone who can communicate well",
+    "intro": "AI handles first drafts and research — you provide strategy and voice. Output 3x more content, charge same rates. $75-200/hr potential.",
+    "source": "SideQuestHustle 2026 ($75-200/hr), Upwork top non-AI skill category"
   },
   {
     "rank": 6,
-    "name": "AI Resume & Cover Letter Service",
-    "difficulty": 1,
-    "crowd": "Anyone with writing skills",
-    "intro": "Help job seekers craft tailored resumes and cover letters. AI assists with formatting and keyword optimization for ATS systems."
+    "name": "Prompt Engineering",
+    "difficulty": 2,
+    "crowd": "Analytical thinkers, anyone who uses AI daily",
+    "intro": "Fiverr searches grew +76% (Fall 2025). Design prompts that get better results from AI for businesses. Build custom prompt libraries for specific industries.",
+    "source": "Fiverr Business Trends Index 2025 (+76%), SideQuestHustle ($75-150/hr)"
   },
   {
     "rank": 7,
-    "name": "Niche Blog with AI Content",
-    "difficulty": 3,
-    "crowd": "Writers, hobbyists with niche knowledge",
-    "intro": "Build a niche blog on topics you know well. AI accelerates research and first drafts — you add expertise and personality for ad revenue."
+    "name": "AI Chatbot Development",
+    "difficulty": 4,
+    "crowd": "Tech learners, customer service background",
+    "intro": "Upwork demand grew +71% YoY. Build custom chatbots for businesses using ChatGPT, Claude, or specialized platforms. $100-250/hr potential.",
+    "source": "Upwork In-Demand Skills 2026 (+71%), SideQuestHustle ($100-250/hr)"
   },
   {
     "rank": 8,
-    "name": "AI-Assisted Virtual Bookkeeping",
-    "difficulty": 4,
-    "crowd": "Finance background, detail-oriented people",
-    "intro": "Offer bookkeeping services to small businesses. AI automates data entry and categorization — you handle review and client communication."
+    "name": "AI Tool Website (Ads Revenue)",
+    "difficulty": 3,
+    "crowd": "Beginners with basic web knowledge, no coding needed",
+    "intro": "Build simple utility websites (converters, calculators) with AI, earn through Google Ads. Real example: compressjpeg.com earns $19K/month from 1.9M visitors.",
+    "source": "Mikey Website Builder (verified case), Google Trends 'AI website builder' +200%"
   }
 ]

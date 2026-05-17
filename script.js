@@ -60,7 +60,7 @@ function renderCreators(creators) {
     el.innerHTML = creators.map(c => `
         <div class="creator-card fade-in" data-name="${c.title.toLowerCase()} ${c.author.toLowerCase()}">
             <div class="creator-thumb">
-                <img src="${c.thumbnail}" alt="${c.title}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <img src="${c.thumbnail}" alt="${c.title}" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.replace('hqdefault','default')}else{this.style.display='none';this.nextElementSibling.style.display='flex'}">
                 <div class="thumb-placeholder" style="display:none">Video Thumbnail</div>
             </div>
             <div class="creator-body">

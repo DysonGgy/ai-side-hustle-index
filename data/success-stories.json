@@ -1,52 +1,47 @@
 [
   {
-    "company": "Cursor (Anysphere)",
-    "founders": "Michael Truell, Sualeh Asif, Arvid Lunnemark, Aman Sanger",
-    "story": "Four MIT students built an AI-powered code editor. In less than 4 years, they reached $2B in annualized revenue — the fastest-growing SaaS company in history.",
-    "valuation": "$29.3B (Nov 2025)",
-    "revenue": "$2B ARR",
-    "employees": "~100",
-    "source": "https://www.forbes.com/sites/rashishrivastava/2025/11/13/four-cofounders-of-popular-ai-coding-tool-cursor-are-now-billionaires/",
-    "highlight": "All 4 cofounders became billionaires in their 20s"
+    "company": "Medvi",
+    "founders": "Matthew Gallagher",
+    "story": "A 41-year-old from LA used $20,000 and AI tools to build a telehealth company from his house. No coding background — AI wrote the code, produced marketing, and handled operations. Only 2 employees: him and his brother.",
+    "revenue": "$401M in Year 1, $1.8B run rate in Year 2",
+    "team": "2 people",
+    "source": "https://www.forbes.com/sites/josipamajic/2026/04/02/ai-and-20000-helped-one-man-build-a-18-billion-telehealth-startup/",
+    "highlight": "$20K investment → $401M revenue in 12 months with just 2 employees"
   },
   {
-    "company": "Midjourney",
-    "founders": "David Holz",
-    "story": "A self-funded AI image generation platform that became profitable within 6 months of launch. No venture capital, no office — just a small team building the most popular AI art tool.",
-    "valuation": "$10B",
-    "revenue": "$500M+ ARR",
-    "employees": "~40",
-    "source": "https://www.forbes.com/sites/elainepofeldt/2025/11/17/the-race-to-create-a-billion-dollar-one-person-business/",
-    "highlight": "$12.5M revenue per employee — highest in tech"
+    "company": "Tibo's AI Portfolio (Tweet Hunter, Taplio, Outrank, Revid)",
+    "founders": "Tibo Louis-Lucas",
+    "story": "A French solo maker who built and launched a new product every month until one took off. Bootstrapped 5 AI-powered SaaS products, sold Tweet Hunter & Taplio for $10M+, now earns $1M+/month across his portfolio.",
+    "revenue": "$1M+/month (portfolio), $10M+ exit",
+    "team": "Solo founder + 10 contractors",
+    "source": "https://foundingjourney.com/p/tibo",
+    "highlight": "Built 11 products in 11 months — one became a multi-million dollar exit"
   },
   {
-    "company": "Bolt.new (StackBlitz)",
-    "founders": "Eric Simons",
-    "story": "After 7 years of grinding through failed startups (including living in AOL's HQ), Eric launched Bolt.new in Oct 2024. It hit $4M ARR in 30 days and $40M ARR in 5 months.",
-    "valuation": "$700M",
-    "revenue": "$40M ARR (5 months after launch)",
-    "employees": "~50",
-    "source": "https://www.growthunhinged.com/p/boltnew-growth-journey",
-    "highlight": "From $0 to $40M ARR in just 5 months"
+    "company": "HeadshotPro",
+    "founders": "Danny Postma",
+    "story": "A Dutch indie hacker who built an AI headshot generator as a solo developer. No VC funding, no office. Grew to 80,000+ customers and $50K+/month through affiliate marketing and SEO — all while traveling the world.",
+    "revenue": "$50K+/month, 80,000+ customers",
+    "team": "1 person",
+    "source": "https://www.rewardful.com/case-studies/headshotpro",
+    "highlight": "One-person AI business serving 80,000+ paying customers"
   },
   {
-    "company": "Lovable",
-    "founders": "Anton Osika",
-    "story": "A Swedish AI app builder that became the fastest-growing software startup ever. From $0 to $400M ARR in under 18 months, enabling non-coders to build apps with AI.",
-    "valuation": "$6.6B",
-    "revenue": "$400M ARR (Feb 2026)",
-    "employees": "~146",
-    "source": "https://www.forbes.com/sites/iainmartin/2025/07/23/vibe-coding-turned-this-swedish-ai-unicorn-into-the-fastest-growing-software-startup-ever/",
-    "highlight": "Fastest software startup to $100M ARR in history"
+    "company": "Pieter Levels' Portfolio (NomadList, RemoteOK, PhotoAI, InteriorAI)",
+    "founders": "Pieter Levels",
+    "story": "A Dutch developer who builds and runs multiple profitable products entirely solo from his laptop. No employees, no office, no VC. His AI products (PhotoAI, InteriorAI) added significantly to his $3M+ ARR portfolio.",
+    "revenue": "$3M+ ARR (all products combined)",
+    "team": "1 person, 0 employees",
+    "source": "https://success.com/success-edge/the-neurological-edge",
+    "highlight": "Manages a $3M ARR portfolio completely alone — the OG indie hacker"
   },
   {
-    "company": "Perplexity AI",
-    "founders": "Aravind Srinivas, Denis Yarats, Johnny Ho, Andy Konwinski",
-    "story": "An AI-powered search engine challenging Google. Founded in 2022, grew from $150M valuation to $20B in under 3 years — a 133x increase.",
-    "valuation": "$20B (Sep 2025)",
-    "revenue": "$500M ARR",
-    "employees": "~200",
-    "source": "https://economictimes.com/tech/artificial-intelligence/perplexity-ceo-says-revenue-hit-500-million-after-computer-pivot/articleshow/130251436.cms",
-    "highlight": "Revenue grew 5x from $100M to $500M in months"
+    "company": "Base44",
+    "founders": "Maor Shlomo",
+    "story": "An Israeli developer who built an AI-powered app builder in early 2025. Hit $1M ARR within just 3 weeks of launch — one of the fastest solo-built products to reach that milestone.",
+    "revenue": "$1M ARR in 3 weeks",
+    "team": "Solo developer",
+    "source": "https://success.com/success-edge/the-neurological-edge",
+    "highlight": "From launch to $1M ARR in just 21 days — solo"
   }
 ]

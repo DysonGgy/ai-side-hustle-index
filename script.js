@@ -97,12 +97,12 @@ function renderSuccessStories(stories) {
             <p class="story">${s.story}</p>
             <div class="metrics">
                 <div class="metric">
-                    <div class="metric-label">Valuation</div>
-                    <div class="metric-value">${s.valuation}</div>
-                </div>
-                <div class="metric">
                     <div class="metric-label">Revenue</div>
                     <div class="metric-value">${s.revenue}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Team Size</div>
+                    <div class="metric-value">${s.team}</div>
                 </div>
             </div>
             <div class="highlight">${s.highlight}</div>
